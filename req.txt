@@ -1,5 +1,7 @@
 langchain
-wikipedia
+dotenv
+crewai
 langchain-community
+langchain-google-genai
 python-dotenv
 pydantic
