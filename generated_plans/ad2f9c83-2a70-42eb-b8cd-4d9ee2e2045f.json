@@ -1,0 +1,425 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-02T22:33:27.865020",
+    "trip_duration": 3,
+    "travelers": 2,
+    "currency": "INR",
+    "start_city": "Bangalore",
+    "attempts": 1
+  },
+  "destination": {
+    "city": "Hampi, Karnataka",
+    "selection_reasoning": "Hampi is the ideal destination as it perfectly aligns with all your criteria. For a 3-day trip from Bangalore with a \u20b925,000 budget, it is highly feasible and cost-effective. Travel can be done economically via overnight trains or buses, which is ideal for a short duration as it maximizes your time at the destination. Accommodation, food, and local transport in Hampi are very affordable, ensuring your trip remains well within budget. Most importantly, Hampi is a UNESCO World Heritage site that directly caters to your interest in temples and culture, offering a breathtaking landscape of ancient ruins, magnificent temples like the Virupaksha and Vittala Temples, and the rich history of the Vijayanagara Empire. The winter season is the absolute best time to visit, as the weather is pleasant and perfect for exploring this vast open-air museum.",
+    "research": {
+      "attractions": [
+        "Virupaksha Temple: An ancient, still-functioning temple dedicated to Lord Shiva, it is the main landmark of Hampi and a focal point of the Hampi Bazaar.",
+        "Vittala Temple Complex: A stunning example of Vijayanagara architecture, famous for its iconic Stone Chariot and musical pillars that resonate with musical notes when tapped.",
+        "Matanga Hill: The highest point in Hampi, offering breathtaking 360-degree panoramic views of the ruins and the Tungabhadra river. It is the best spot for watching the sunrise or sunset.",
+        "Elephant Stables: An impressive domed structure that once housed the royal elephants. Its Indo-Islamic architectural style is a highlight of the Royal Centre.",
+        "Lotus Mahal: A beautiful, symmetrical two-story structure within the Zenana Enclosure, believed to be a recreational pavilion for the royal women. Its design resembles a lotus bud.",
+        "Hemakuta Hill Temple Complex: A cluster of pre-Vijayanagara era temples located south of the Virupaksha temple, offering a serene atmosphere and great views, especially at sunset.",
+        "Achyutaraya Temple: A large, abandoned temple complex located between Matanga and Gandhamadana hills, offering a more secluded and adventurous exploration experience away from the main crowds.",
+        "Queen's Bath: A large, ornate bathing chamber with a plain exterior and a beautifully decorated interior, showcasing the intricate water systems of the empire.",
+        "Sanapur Lake: A picturesque man-made reservoir surrounded by boulders, offering a tranquil spot for swimming (with caution), relaxing, and enjoying a coracle ride.",
+        "Anjanadri Hill: Believed to be the birthplace of the Hindu deity Hanuman, this hill requires a climb of nearly 600 steps but rewards visitors with spectacular views and a vibrant temple at the top."
+      ],
+      "cuisine": [
+        "South Indian Thali: The most common and recommended meal. A platter typically served on a banana leaf with rice, sambar, rasam, various vegetable curries (palya), curd, and a sweet dish. It's a wholesome, affordable, and authentic experience.",
+        "Breakfast Staples (Idli, Dosa, Vada): Start your day like a local with fluffy steamed rice cakes (idli), crispy crepes (dosa), or savory fried doughnuts (vada), served with chutney and sambar.",
+        "Bisi Bele Bath: A flavorful and hearty one-pot dish from Karnataka made with rice, lentils, vegetables, and a special spice blend. It's a comforting and nutritious meal.",
+        "Local Eateries ('Khanavalis'): For the most authentic food, skip the tourist-centric restaurants and find a small, local eatery. The food is fresh, simple, and gives you a true taste of the region.",
+        "Vegetarian Dominance: Hampi is a holy town, so the majority of restaurants, especially around the main temple area, serve only vegetarian food. Non-vegetarian options are more likely to be found across the river in Anegundi.",
+        "Tender Coconut Water & Fresh Juices: Stay hydrated by drinking fresh tender coconut water or sugarcane juice sold by street vendors. It's a refreshing and natural way to beat the heat while exploring."
+      ],
+      "cultural_norms": [
+        "Modest Dress Code: Dress conservatively, especially when visiting temples. Both men and women should ensure their shoulders and knees are covered. Carrying a scarf or shawl is a practical way to cover up when needed.",
+        "Remove Footwear: It is a sign of respect to remove your shoes and hats before entering any temple or local home. You can leave them with a caretaker for a small fee or carry them in your bag.",
+        "Respect the Ruins: Hampi is a UNESCO World Heritage Site. Do not climb on fragile structures, walls, or statues. Do not litter and help preserve the sanctity and cleanliness of this ancient site.",
+        "Photography Etiquette: Always ask for permission before taking photographs of local people. Photography is often prohibited inside the inner sanctum of temples. Using drones is strictly forbidden without special permission.",
+        "Alcohol and Smoking: The sale and consumption of alcohol are officially banned within the sacred Hampi town area. While it might be available discreetly across the river, public consumption is frowned upon and can lead to trouble.",
+        "Greeting Locals: A warm smile and a 'Namaste' (with palms pressed together) is the customary and respectful way to greet people. Learning a few words in Kannada, like 'Dhanyavadagalu' (Thank you), will be appreciated."
+      ],
+      "transportation_tips": [
+        "Getting to Hampi: The nearest railway station is Hosapete Junction (HPT), about 13 km away. From there, you can take a local bus or an auto-rickshaw to Hampi Bazaar. The nearest major airport is in Bengaluru (BLR), from where you can take an overnight bus or train.",
+        "Renting a Moped/Scooter: The most efficient and popular way to explore the vast, spread-out ruins is by renting a moped or scooter. It gives you the freedom to explore at your own pace. Ensure you have a valid license and always wear a helmet.",
+        "Bicycle Rentals: For a more eco-friendly and active exploration, renting a bicycle is a great option. It's perfect for covering the areas around the main bazaar and the Royal Centre.",
+        "Auto-Rickshaw Tours: You can hire an auto-rickshaw for a full-day tour. They usually have a set itinerary covering the main sights. It's crucial to negotiate and agree upon the price before starting the trip.",
+        "Crossing the Tungabhadra River: A motorboat ferry runs between Hampi Bazaar and the Anegundi side (Virupapur Gaddi). Alternatively, for a unique experience, take a traditional round coracle boat, especially during the dry season.",
+        "Wear Sturdy Footwear: The terrain is uneven, rocky, and involves a lot of walking and some climbing (like on Matanga Hill). Comfortable, sturdy walking shoes are essential for a safe and enjoyable experience."
+      ],
+      "local_activities": [
+        "Sunrise from Matanga Hill: Wake up early and make the moderate 30-minute trek up Matanga Hill. Watching the sun rise over the surreal, boulder-strewn landscape and ancient temples is an unforgettable, almost spiritual experience.",
+        "Coracle Ride on the Tungabhadra: Take a traditional, bowl-shaped boat (coracle) ride on the river. It offers a unique perspective of the temples, ghats, and ruins along the riverbank. Best done in the morning or late afternoon.",
+        "Explore Anegundi Village: Cross the river to Anegundi, a village older than Hampi itself. Wander through its quiet lanes, see rural life, visit the Anjanadri Hill, and enjoy the laid-back 'hippie' vibe of the area.",
+        "Witness the Temple Elephant's Bath: Head to the Tungabhadra river ghats early in the morning (around 8:30 AM) to watch Lakshmi, the Virupaksha temple elephant, get her daily bath before she heads to the temple to bless devotees.",
+        "Bouldering and Rock Climbing: Hampi's unique geography makes it a global hotspot for bouldering. Whether you're a seasoned climber or a beginner, you can find guided sessions or rent gear to try climbing the granite boulders.",
+        "Attend Hampi Utsav: If your visit coincides with this annual cultural festival (usually held in November or January/February), you're in for a treat. The entire site comes alive with classical music, dance performances, processions, and fireworks.",
+        "Winter Travel Tips (October - February): This is the peak and best season to visit. The weather is pleasant and cool, perfect for exploration. However, book accommodation and transport well in advance. Pack light layers\u2014t-shirts for the warm days and a light jacket or fleece for the chilly evenings and early mornings. Sunscreen and a hat are still essential."
+      ]
+    }
+  },
+  "transportation": {
+    "long_distance_options": [
+      {
+        "mode": "Overnight Train",
+        "details": "The most popular and balanced option. Trains run from Bangalore (YPR/SBC) to Hosapete (HPT), the nearest railway station (13 km from Hampi). The Hampi Express (16592) is a daily overnight service.",
+        "cost": "Low. Very cost-effective, with options ranging from budget-friendly Sleeper Class to more comfortable AC coaches (3A, 2A).",
+        "travel_time": "8-10 hours (overnight). This is highly efficient as it saves a travel day and the cost of one night's accommodation.",
+        "convenience": "High. Travel while you sleep and wake up fresh near your destination. From Hosapete, auto-rickshaws and local buses are readily available to take you to Hampi."
+      },
+      {
+        "mode": "Overnight Bus",
+        "details": "A great alternative to trains, with numerous private operators (VRL, Greenline) and government KSRTC services offering sleeper and semi-sleeper buses.",
+        "cost": "Low to Medium. Prices are competitive with trains, sometimes slightly higher for premium sleeper services.",
+        "travel_time": "7-9 hours (overnight). Similar to the train, allowing for efficient use of time.",
+        "convenience": "High. Offers multiple pick-up points across Bangalore, providing more flexibility than trains. Direct drop-off in Hampi or Hosapete."
+      },
+      {
+        "mode": "Flight",
+        "details": "The nearest airport is Vidyanagar Airport (VDY), located about 40 km from Hampi. Limited direct flights are available from Bangalore (BLR).",
+        "cost": "High. This is the most expensive option by a significant margin.",
+        "travel_time": "Fastest (Total ~4-5 hours). Includes a ~1-hour flight, plus time for airport transfers, check-in, security, and the 1-1.5 hour taxi ride from VDY to Hampi.",
+        "convenience": "Medium. While the flight is fast, the overall journey involves multiple legs (home to BLR airport, flight, VDY airport to Hampi), which can be less seamless than a direct train or bus."
+      },
+      {
+        "mode": "Private Car / Self-Drive",
+        "details": "Driving the ~350 km distance offers complete control over your schedule and itinerary.",
+        "cost": "High. The total cost includes fuel, tolls, and rental fees (if applicable). It becomes more economical when shared among a group of 3-4 people.",
+        "travel_time": "6-7 hours, depending on traffic out of Bangalore and the number of stops.",
+        "convenience": "Very High. Offers door-to-door service and the ultimate flexibility to stop en route. The car can also be used for local sightseeing in Hampi, eliminating the need for other transport."
+      }
+    ],
+    "local_transport_options": [
+      {
+        "mode": "Scooter / Moped Rental",
+        "details": "The most popular and flexible way to explore Hampi's vast landscape. Rentals are widely available.",
+        "cost": "Low. Typically INR 300-500 per day, plus fuel. Very budget-friendly.",
+        "convenience": "Very High. Allows you to explore at your own pace, discover hidden spots, and easily navigate between the main sites and the Anegundi side of the river."
+      },
+      {
+        "mode": "Auto-rickshaw (Day Hire)",
+        "details": "A convenient option for those who prefer not to drive. Drivers can be hired for a full-day or half-day sightseeing tour covering all major monuments.",
+        "cost": "Medium. Expect to pay INR 800-1500 for a full day, depending on the season and your negotiation skills. Drivers often double as informal guides.",
+        "convenience": "High. A hassle-free way to cover the main attractions without worrying about navigation or the heat."
+      },
+      {
+        "mode": "Bicycle Rental",
+        "details": "An excellent choice for exploring the relatively flat areas around the main temple complexes and Hampi Bazaar.",
+        "cost": "Very Low. The cheapest motorized option, around INR 100-150 per day.",
+        "convenience": "Medium. Eco-friendly and immersive, but can be physically demanding, especially under the hot sun and for covering longer distances between site clusters."
+      },
+      {
+        "mode": "Walking",
+        "details": "Essential for exploring the intricate details within temple complexes and ruins.",
+        "cost": "Free.",
+        "convenience": "Necessary for appreciation, but not a viable option for traveling between the major zones of Hampi, which are several kilometers apart."
+      }
+    ],
+    "reasoning": "As your Transportation and Logistics Specialist, my recommendation balances cost, time, and convenience for the Bangalore-Hampi trip. \n\n**Overall Best Recommendation (Balanced):** The **Overnight Train** to Hosapete (HPT) is the most efficient and cost-effective option. It maximizes your time by covering the long distance while you sleep, saving on a night's accommodation. Upon arrival, hiring a **Scooter/Moped** for local travel provides the best combination of flexibility and affordability to explore the sprawling ruins at your own pace. This combination offers the quintessential Hampi experience. \n\n**For Time-Crunched Travelers:** If your budget allows and time is the absolute priority, a **Flight** to Vidyanagar (VDY) is the fastest way to get there. From the airport, a pre-booked taxi is necessary. For local transport, hiring an **Auto-rickshaw for the day** will ensure you cover all major sites efficiently without wasting time on navigation. \n\n**For Groups and Families:** A **Private Car/Self-Drive** from Bangalore is the most convenient option. The cost becomes reasonable when split among 3-4 people. It offers unparalleled door-to-door comfort and the flexibility to use the same vehicle for local sightseeing, which is a major advantage when traveling with family or in a group. \n\n**For Budget Backpackers:** An **Overnight Bus** (KSRTC Sleeper) is an excellent, low-cost alternative if train tickets are unavailable. For local exploration, a **Bicycle Rental** is the cheapest method, supplemented by walking and occasional short auto-rickshaw rides for longer distances."
+  },
+  "itinerary": {
+    "itinerary": [
+      {
+        "day": 1,
+        "theme": "The Sacred Epicenter & Sunset Views",
+        "activities": [
+          {
+            "activity": "Arrival and Check-in",
+            "time": "7:00 AM - 8:00 AM",
+            "location": "Hosapete / Hampi",
+            "description": "Arrive at Hosapete station/bus stand. Take an auto-rickshaw to your pre-booked accommodation in Hampi. Freshen up and have a hearty breakfast.",
+            "transportation": "Auto-rickshaw"
+          },
+          {
+            "activity": "Witness Lakshmi's Morning Bath",
+            "time": "8:30 AM - 9:00 AM",
+            "location": "Tungabhadra River Ghats",
+            "description": "Head to the river ghats near Virupaksha Temple to see the temple elephant, Lakshmi, getting her ceremonial morning bath. It's a charming cultural spectacle.",
+            "transportation": "Walking"
+          },
+          {
+            "activity": "Explore Virupaksha Temple",
+            "time": "9:00 AM - 11:00 AM",
+            "location": "Virupaksha Temple",
+            "description": "Visit Hampi's oldest and principal temple. Explore its massive gopuram (tower), intricate carvings, and the main shrine. Remember to remove footwear and dress modestly. Receive blessings from Lakshmi the elephant inside.",
+            "transportation": "Walking"
+          },
+          {
+            "activity": "Wander through Hampi Bazaar & Lunch",
+            "time": "11:00 AM - 1:00 PM",
+            "location": "Hampi Bazaar",
+            "description": "Stroll down the ancient market street in front of the temple. Have a traditional South Indian Thali for lunch at a local eatery like Mango Tree Restaurant.",
+            "transportation": "Walking"
+          },
+          {
+            "activity": "Discover Krishna Temple & Monolithic Statues",
+            "time": "1:00 PM - 3:30 PM",
+            "location": "Krishna Temple & Sasivekalu Ganesha",
+            "description": "Walk to the nearby Krishna Temple, known for its ornate carvings and grand bazaar. On the way, visit the monolithic Sasivekalu Ganesha and Kadalekalu Ganesha statues.",
+            "transportation": "Walking"
+          },
+          {
+            "activity": "Sunset from Hemakuta Hill",
+            "time": "4:00 PM - 6:00 PM",
+            "location": "Hemakuta Hill Temple Complex",
+            "description": "Make a gentle climb up Hemakuta Hill, dotted with pre-Vijayanagara era temples. This is a serene spot to watch the sun set over the Virupaksha temple and the boulder-strewn landscape.",
+            "transportation": "Walking"
+          },
+          {
+            "activity": "Dinner and Relaxation",
+            "time": "7:00 PM onwards",
+            "location": "Hampi Bazaar Area",
+            "description": "Enjoy a quiet dinner at one of the local cafes. Rest well for an early start the next day.",
+            "transportation": "Walking"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "theme": "The Royal Enclave & Architectural Marvels",
+        "activities": [
+          {
+            "activity": "Rent a Moped/Scooter",
+            "time": "8:30 AM - 9:00 AM",
+            "location": "Hampi Bazaar",
+            "description": "After breakfast, rent a moped or scooter for the day to explore the sprawling ruins efficiently. Ensure you have a valid license.",
+            "transportation": "Moped/Scooter"
+          },
+          {
+            "activity": "Explore the Royal Centre",
+            "time": "9:00 AM - 1:00 PM",
+            "location": "Royal Centre",
+            "description": "Ride to the Royal Centre. Visit the Queen's Bath, the grand Mahanavami Dibba platform, the impressive Stepped Tank, and the Hazara Rama Temple with its intricate Ramayana panels.",
+            "transportation": "Moped/Scooter"
+          },
+          {
+            "activity": "Discover the Zenana Enclosure",
+            "time": "1:00 PM - 2:30 PM",
+            "location": "Zenana Enclosure",
+            "description": "Explore the walled enclosure which houses the beautiful Lotus Mahal, a fine example of Indo-Islamic architecture, and the impressive Elephant Stables. Have lunch at a nearby restaurant on the way to the Vittala Temple.",
+            "transportation": "Moped/Scooter"
+          },
+          {
+            "activity": "Marvel at the Vittala Temple Complex",
+            "time": "2:30 PM - 5:00 PM",
+            "location": "Vittala Temple Complex",
+            "description": "Visit the crown jewel of Hampi. Admire the iconic Stone Chariot, the intricately carved halls, and the famous musical pillars that resonate when tapped. Note: The entry ticket here also grants access to the Zenana Enclosure.",
+            "transportation": "Moped/Scooter"
+          },
+          {
+            "activity": "Coracle Ride on the Tungabhadra",
+            "time": "5:00 PM - 6:00 PM",
+            "location": "Near Vittala Temple / Kodanda Rama Temple",
+            "description": "Experience a traditional coracle (bowl boat) ride on the Tungabhadra River. It offers a unique and peaceful perspective of the ruins and boulders from the water as the sun begins to set.",
+            "transportation": "Walking to the river bank"
+          },
+          {
+            "activity": "Return and Dinner",
+            "time": "6:30 PM onwards",
+            "location": "Hampi Bazaar",
+            "description": "Ride back to the Hampi Bazaar area, return your scooter, and enjoy a well-deserved dinner.",
+            "transportation": "Moped/Scooter"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "theme": "Sunrise Trek & The Mythical Kingdom",
+        "activities": [
+          {
+            "activity": "Sunrise Trek to Matanga Hill",
+            "time": "5:15 AM - 7:30 AM",
+            "location": "Matanga Hill",
+            "description": "Embark on an early morning, 30-minute trek to the top of Matanga Hill, the highest point in Hampi. Witnessing the sunrise paint the vast landscape of temples and boulders in gold is a truly magical and spiritual experience.",
+            "transportation": "Walking"
+          },
+          {
+            "activity": "Breakfast and River Crossing",
+            "time": "8:00 AM - 9:30 AM",
+            "location": "Hampi Bazaar / Tungabhadra River",
+            "description": "Descend from the hill and have a fulfilling breakfast. Afterwards, head to the river ghats and take the motorboat ferry to cross over to Anegundi (Virupapur Gaddi).",
+            "transportation": "Ferry"
+          },
+          {
+            "activity": "Climb Anjanadri Hill",
+            "time": "9:30 AM - 12:00 PM",
+            "location": "Anjanadri Hill, Anegundi",
+            "description": "Hire an auto or rent another scooter on this side. Head to Anjanadri Hill, believed to be the birthplace of Lord Hanuman. The climb of nearly 600 steps is rewarded with breathtaking panoramic views of the entire region.",
+            "transportation": "Auto-rickshaw / Scooter"
+          },
+          {
+            "activity": "Explore Anegundi Village & Lunch",
+            "time": "12:00 PM - 2:00 PM",
+            "location": "Anegundi",
+            "description": "Explore the tranquil and ancient village of Anegundi. Visit the Pampa Sarovar and enjoy the serene, rural atmosphere. Have a relaxed lunch at one of the laid-back cafes in Virupapur Gaddi.",
+            "transportation": "Auto-rickshaw / Scooter"
+          },
+          {
+            "activity": "Return and Departure",
+            "time": "2:30 PM onwards",
+            "location": "Hampi / Hosapete",
+            "description": "Cross the river back to Hampi Bazaar. Collect your luggage from your hotel. Take an auto-rickshaw to Hosapete to catch your evening train or bus for your onward journey, filled with memories of the glorious Vijayanagara Empire.",
+            "transportation": "Ferry, then Auto-rickshaw"
+          }
+        ]
+      }
+    ]
+  },
+  "budget": {
+    "plan": {
+      "transportation": [
+        {
+          "item": "Round-trip AC Sleeper Bus (Bangalore - Hospet)",
+          "details": "Comfortable overnight travel for 2 people. Approx. \u20b91,000 per person, each way.",
+          "cost_inr": 4000
+        },
+        {
+          "item": "Local Auto-rickshaw (Hospet - Hampi, round-trip)",
+          "details": "Transfer from the bus stand to your accommodation and back.",
+          "cost_inr": 600
+        },
+        {
+          "item": "Local Sightseeing (Scooter Rental + Fuel)",
+          "details": "Renting a scooter for 2 full days (\u20b9400/day) plus estimated fuel costs (\u20b9300) offers the best flexibility.",
+          "cost_inr": 1100
+        }
+      ],
+      "accommodation": [
+        {
+          "item": "Guesthouse / Homestay (2 nights)",
+          "details": "A clean and comfortable double room in a well-rated guesthouse near the main Hampi sites. Approx. \u20b91,500 per night.",
+          "cost_inr": 3000
+        }
+      ],
+      "activities": [
+        {
+          "item": "Vittala Temple Complex & Zenana Enclosure Tickets",
+          "details": "Composite entry ticket for 2 people (\u20b940 per person for Indian nationals).",
+          "cost_inr": 80
+        },
+        {
+          "item": "Coracle Boat Ride",
+          "details": "A quintessential Hampi experience on the Tungabhadra River for 2 people.",
+          "cost_inr": 200
+        },
+        {
+          "item": "Miscellaneous Fees",
+          "details": "A small buffer for minor temple donations, camera fees, or other incidental charges.",
+          "cost_inr": 220
+        }
+      ],
+      "meals": [
+        {
+          "item": "Food & Beverages (3 Days)",
+          "details": "A comfortable budget covering breakfast, lunch, dinner, water, and snacks for 2 people. Estimated at \u20b9900 per person per day.",
+          "cost_inr": 5400
+        }
+      ],
+      "emergency_fund": 1500,
+      "visa_fees": 0,
+      "total_estimated_cost": 16100
+    },
+    "validation": {
+      "schema_version": "1.0",
+      "currency": "INR",
+      "verified_at": "2024-05-21T08:30:00Z",
+      "categories": {
+        "accommodation": [
+          {
+            "item": "Guesthouse / Homestay (2 nights)",
+            "details": "A clean and comfortable double room in a well-rated guesthouse near the main Hampi sites. Approx. \u20b91,500 per night.",
+            "cost_inr": 3000
+          }
+        ],
+        "transportation": [
+          {
+            "item": "Round-trip AC Sleeper Bus (Bangalore - Hospet)",
+            "details": "Comfortable overnight travel for 2 people. Approx. \u20b91,000 per person, each way.",
+            "cost_inr": 4000
+          },
+          {
+            "item": "Local Auto-rickshaw (Hospet - Hampi, round-trip)",
+            "details": "Transfer from the bus stand to your accommodation and back.",
+            "cost_inr": 600
+          },
+          {
+            "item": "Local Sightseeing (Scooter Rental + Fuel)",
+            "details": "Renting a scooter for 2 full days (\u20b9400/day) plus estimated fuel costs (\u20b9300) offers the best flexibility.",
+            "cost_inr": 1100
+          }
+        ],
+        "activities": [
+          {
+            "item": "Vittala Temple Complex & Zenana Enclosure Tickets",
+            "details": "Composite entry ticket for 2 people (\u20b940 per person for Indian nationals).",
+            "cost_inr": 80
+          },
+          {
+            "item": "Coracle Boat Ride",
+            "details": "A quintessential Hampi experience on the Tungabhadra River for 2 people.",
+            "cost_inr": 200
+          },
+          {
+            "item": "Miscellaneous Fees",
+            "details": "A small buffer for minor temple donations, camera fees, or other incidental charges.",
+            "cost_inr": 220
+          }
+        ],
+        "meals": [
+          {
+            "item": "Food & Beverages (3 Days)",
+            "details": "A comfortable budget covering breakfast, lunch, dinner, water, and snacks for 2 people. Estimated at \u20b9900 per person per day.",
+            "cost_inr": 5400
+          }
+        ],
+        "emergency_fund": {
+          "item": "Emergency Fund",
+          "details": "Contingency for unforeseen expenses.",
+          "cost_inr": 1500
+        },
+        "visa_fees": {
+          "item": "Visa Fees",
+          "details": "Not applicable for domestic travel.",
+          "cost_inr": 0
+        }
+      },
+      "computed_total": 16100,
+      "original_total_in_plan": 16100,
+      "discrepancy": 0,
+      "within_budget": true,
+      "over_by": 0,
+      "flags": [
+        {
+          "code": "POTENTIAL_UNDERESTIMATION",
+          "description": "The allocated cost for the Coracle Boat Ride (\u20b9200) is highly optimistic. Actual costs for a scenic ride often range from \u20b9300-\u20b9500 per person, potentially leading to an unbudgeted expense of \u20b9400-\u20b9800."
+        },
+        {
+          "code": "MISSING_ITEM",
+          "description": "The plan does not include a budget for a licensed guide. While exploring by scooter is flexible, a guide (approx. \u20b91,000-\u20b91,500 for a day) can significantly enhance the experience by providing historical context for the ruins."
+        },
+        {
+          "code": "LOW_BUFFER",
+          "description": "The 'Miscellaneous Fees' of \u20b9220 under activities is a very small buffer and may not be sufficient to cover camera fees at multiple sites, shoe-keeping charges, and small donations."
+        }
+      ],
+      "recommendations": [
+        "Re-evaluate the 'Activities' budget. Increase the allocation for the Coracle Boat Ride to a more realistic \u20b9800 to avoid on-the-spot price negotiations and ensure a quality experience.",
+        "Consider allocating approximately \u20b91,500 to hire a licensed guide for one of the two sightseeing days. This investment will provide invaluable historical context that is easily missed when exploring independently.",
+        "While the overall plan is well within the \u20b925,000 budget, it's advisable to earmark a portion of the \u20b98,900 surplus for the flagged items (boat ride, guide) and potential souvenir purchases to have a more comprehensive and stress-free financial plan."
+      ]
+    },
+    "total_cost": 16100,
+    "within_budget": true,
+    "budget_limit": 25000,
+    "realistic": false,
+    "validation_issues": [
+      "Accommodation cost 0 INR is too low. Minimum: 2400 INR for 3 nights",
+      "Meal cost 0 INR seems low. Expected minimum: 2700 INR"
+    ]
+  },
+  "recommendations": [
+    "Re-evaluate the 'Activities' budget. Increase the allocation for the Coracle Boat Ride to a more realistic \u20b9800 to avoid on-the-spot price negotiations and ensure a quality experience.",
+    "Consider allocating approximately \u20b91,500 to hire a licensed guide for one of the two sightseeing days. This investment will provide invaluable historical context that is easily missed when exploring independently.",
+    "While the overall plan is well within the \u20b925,000 budget, it's advisable to earmark a portion of the \u20b98,900 surplus for the flagged items (boat ride, guide) and potential souvenir purchases to have a more comprehensive and stress-free financial plan."
+  ]
+}

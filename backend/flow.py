@@ -7,7 +7,7 @@ from datetime import datetime
 
 
 class TravelPlannerFlow:
-    def __init__(self, model="gemini/gemini-2.0-flash-exp", api_key=None):
+    def __init__(self, model="gemini/gemini-2.5-pro", api_key=os.getenv("GOOGLE_API_KEY")):
         """Initialize the travel planner flow with agents and tasks."""
         self.agents = ItineraAgents(model=model, api_key=api_key)
         self.tasks = ItineraTasks()

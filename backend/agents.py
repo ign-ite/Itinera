@@ -5,18 +5,16 @@ import os
 import sys
 
 class ItineraAgents:
-    def __init__(self, model="gemini/gemini-2.0-flash-exp", api_key=None):
+    def __init__(self, model="gemini/gemini-2.5-pro", api_key=None):
         self.model = model
         self.api_key = api_key or os.getenv("GOOGLE_API_KEY")
 
-        # For Google AI Studio (free tier), use the gemini/ prefix
         self.llm = LLM(
             model=model, 
             temperature=0.6,
             api_key=self.api_key
         )
 
-        # Create agents as attributes, not methods
         self.city_selector_agent = self._create_city_selector_agent()
         self.transport_agent = self._create_transport_agent()
         self.hotel_agent = self._create_hotel_agent()
