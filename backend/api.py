@@ -10,13 +10,16 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
-
+# Add backend directory to path for imports
 backend_dir = Path(__file__).parent
 sys.path.insert(0, str(backend_dir))
 
+# Load environment variables
+load_dotenv()
+
 from flow import TravelPlannerFlow
 
+# Validate API key on startup
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
     raise RuntimeError(
@@ -30,6 +33,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, specify exact origins
@@ -38,17 +42,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# In-memory storage for demo (use database in production)
 plans_store: Dict[str, Dict[str, Any]] = {}
 jobs_store: Dict[str, Dict[str, Any]] = {}
 
 class TravelRequest(BaseModel):
-    interests: str = Field(..., min_length=3, max_length=200, description="User interests (e.g., 'culture, food, history')")
-    budget: int = Field(..., gt=0, description="Total budget in INR")
-    duration: int = Field(..., ge=1, le=30, description="Trip duration in days")
-    start_city: str = Field(..., min_length=2, max_length=100, description="Departure city")
-    season: str = Field(..., description="Travel season (summer/winter/monsoon/spring/autumn)")
-    people: int = Field(..., ge=1, le=20, description="Number of travelers")
-    currency: Optional[str] = Field("INR", description="Currency code")
+    prompt: str = Field(..., min_length=10, max_length=1000, description="Natural language travel request")
+
+class TravelRequestStructured(BaseModel):
+    interests: str = Field(..., min_length=3, max_length=200)
+    budget: int = Field(..., gt=0)
+    duration: int = Field(..., ge=1, le=30)
+    start_city: str = Field(..., min_length=2, max_length=100)
+    season: str = Field(...)
+    people: int = Field(..., ge=1, le=20)
+    currency: Optional[str] = Field("INR")
     
     @validator('season')
     def validate_season(cls, v):
@@ -56,12 +64,6 @@ class TravelRequest(BaseModel):
         if v.lower() not in valid_seasons:
             raise ValueError(f'Season must be one of: {", ".join(valid_seasons)}')
         return v.lower()
-    
-    @validator('interests')
-    def validate_interests(cls, v):
-        if not v.strip():
-            raise ValueError('Interests cannot be empty')
-        return v.strip()
 
 class PlanResponse(BaseModel):
     plan_id: str
@@ -84,35 +86,31 @@ class JobStatus(BaseModel):
     completed_at: Optional[str] = None
 
 def generate_plan_sync(job_id: str, request: TravelRequest):
-    """Background task to generate travel plan"""
     try:
         jobs_store[job_id]["status"] = "processing"
         
         flow = TravelPlannerFlow()
-        plan = flow.run(request.dict())
+        plan = flow.run_from_prompt(request.prompt)
         
         plan_id = str(uuid.uuid4())
         
-
         plans_store[plan_id] = {
             "plan_id": plan_id,
             "status": "completed",
             "destination": plan["destination"]["city"],
             "total_cost": plan["budget"]["total_cost"],
-            "budget_limit": request.budget,
+            "budget_limit": plan["budget"]["budget_limit"],
             "within_budget": plan["budget"]["within_budget"],
             "created_at": datetime.now().isoformat(),
             "plan_data": plan
         }
         
-
         jobs_store[job_id].update({
             "status": "completed",
             "plan_id": plan_id,
             "completed_at": datetime.now().isoformat()
         })
         
-
         plans_dir = Path("generated_plans")
         plans_dir.mkdir(exist_ok=True)
         with open(plans_dir / f"{plan_id}.json", "w") as f:
@@ -154,6 +152,7 @@ async def create_plan(request: TravelRequest, background_tasks: BackgroundTasks)
     """
     job_id = str(uuid.uuid4())
     
+    # Create job record
     jobs_store[job_id] = {
         "job_id": job_id,
         "status": "pending",
@@ -161,6 +160,7 @@ async def create_plan(request: TravelRequest, background_tasks: BackgroundTasks)
         "request": request.dict()
     }
     
+    # Start background task
     background_tasks.add_task(generate_plan_sync, job_id, request)
     
     return JobStatus(
@@ -200,15 +200,9 @@ def get_plan(plan_id: str):
 
 @app.post("/plan/sync", response_model=PlanResponse)
 def create_plan_sync(request: TravelRequest):
-    """
-    Create a travel plan (synchronous - may take 30-60 seconds)
-    
-    Use this for testing or when you need immediate results.
-    For production, use the async /plan endpoint.
-    """
     try:
         flow = TravelPlannerFlow()
-        plan = flow.run(request.dict())
+        plan = flow.run_from_prompt(request.prompt)
         
         plan_id = str(uuid.uuid4())
         
@@ -217,7 +211,7 @@ def create_plan_sync(request: TravelRequest):
             "status": "completed",
             "destination": plan["destination"]["city"],
             "total_cost": plan["budget"]["total_cost"],
-            "budget_limit": request.budget,
+            "budget_limit": plan["budget"]["budget_limit"],
             "within_budget": plan["budget"]["within_budget"],
             "created_at": datetime.now().isoformat(),
             "plan_data": plan
@@ -241,7 +235,7 @@ def create_plan_sync(request: TravelRequest):
 def list_plans(limit: int = 10):
     """List all generated plans"""
     plans = list(plans_store.values())
-    return plans[-limit:]  
+    return plans[-limit:]  # Return most recent
 
 @app.delete("/plan/{plan_id}")
 def delete_plan(plan_id: str):
@@ -251,6 +245,7 @@ def delete_plan(plan_id: str):
     
     del plans_store[plan_id]
     
+    # Delete file if exists
     plan_file = Path("generated_plans") / f"{plan_id}.json"
     if plan_file.exists():
         plan_file.unlink()

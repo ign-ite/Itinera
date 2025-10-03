@@ -7,15 +7,13 @@ from datetime import datetime
 
 
 class TravelPlannerFlow:
-    def __init__(self, model="gemini/gemini-2.5-pro", api_key=os.getenv("GOOGLE_API_KEY")):
-        """Initialize the travel planner flow with agents and tasks."""
+    def __init__(self, model="gemini/gemini-2.5-pro", api_key=None):
         self.agents = ItineraAgents(model=model, api_key=api_key)
         self.tasks = ItineraTasks()
         
     def validate_inputs(self, inputs):
-        """Validate required input parameters."""
-        required_fields = ['interests', 'budget', 'duration', 'start_city', 'season', 'people']
-        missing = [field for field in required_fields if field not in inputs]
+        required_fields = ['budget', 'duration', 'start_city', 'season', 'people']
+        missing = [field for field in required_fields if field not in inputs or not inputs[field]]
         
         if missing:
             raise ValueError(f"Missing required fields: {', '.join(missing)}")
@@ -32,8 +30,7 @@ class TravelPlannerFlow:
         return True
     
     def validate_feasibility(self, inputs):
-        """Quick feasibility check before running full workflow"""
-        min_daily_cost_per_person = 1500 
+        min_daily_cost_per_person = 1500
         min_total = inputs['people'] * inputs['duration'] * min_daily_cost_per_person
         
         if inputs['budget'] < min_total:
@@ -41,19 +38,13 @@ class TravelPlannerFlow:
                 'feasible': False,
                 'message': (
                     f"Budget {inputs['budget']} INR is insufficient for {inputs['people']} people "
-                    f"for {inputs['duration']} days. Minimum realistic budget: {min_total} INR "
-                    f"({min_daily_cost_per_person} INR per person per day)."
+                    f"for {inputs['duration']} days. Minimum realistic budget: {min_total} INR."
                 )
             }
-        
-        max_reasonable = inputs['people'] * inputs['duration'] * 50000 
-        if inputs['budget'] > max_reasonable:
-            print(f"Warning: Budget {inputs['budget']} INR seems very high. Are you sure?")
         
         return {'feasible': True}
     
     def validate_budget_realistic(self, plan, inputs):
-        """Programmatic validation - don't trust LLM math alone"""
         budget_data = plan.get('budget', {}).get('plan', {})
         total = plan.get('budget', {}).get('total_cost', 0)
         
@@ -63,49 +54,67 @@ class TravelPlannerFlow:
         min_expected = inputs['people'] * inputs['duration'] * min_per_person_per_day
         
         if total < min_expected:
-            issues.append(
-                f"Total cost {total} INR is unrealistically low. "
-                f"Minimum expected: {min_expected} INR"
-            )
+            issues.append(f"Total {total} INR unrealistically low. Minimum: {min_expected} INR")
         
         if 'accommodation' in budget_data:
             acc_items = budget_data['accommodation']
             if isinstance(acc_items, list) and len(acc_items) > 0:
                 acc_total = sum(item.get('cost', 0) for item in acc_items)
-                min_acc = inputs['duration'] * 800  
+                min_acc = inputs['duration'] * 800
                 if acc_total < min_acc:
-                    issues.append(
-                        f"Accommodation cost {acc_total} INR is too low. "
-                        f"Minimum: {min_acc} INR for {inputs['duration']} nights"
-                    )
+                    issues.append(f"Accommodation {acc_total} INR too low. Minimum: {min_acc} INR")
         
         if 'meals' in budget_data:
             meal_items = budget_data['meals']
             if isinstance(meal_items, list):
                 meal_total = sum(item.get('cost', 0) for item in meal_items)
-                min_meals = inputs['people'] * inputs['duration'] * 3 * 150  
+                min_meals = inputs['people'] * inputs['duration'] * 3 * 150
                 if meal_total < min_meals:
-                    issues.append(
-                        f"Meal cost {meal_total} INR seems low. "
-                        f"Expected minimum: {min_meals} INR"
-                    )
+                    issues.append(f"Meal cost {meal_total} INR too low. Expected: {min_meals} INR")
         
         return {
             'realistic': len(issues) == 0,
             'issues': issues
         }
     
-    def run(self, inputs, max_retries=2):
+    def run_from_prompt(self, prompt, max_retries=2):
         """
-        Execute the complete travel planning workflow with validation and retries.
+        Generate travel plan from natural language prompt
         
         Args:
-            inputs (dict): Dictionary containing trip parameters
-            max_retries (int): Number of times to retry if budget fails
-        
-        Returns:
-            dict: Complete travel plan with itinerary, budget, and recommendations
+            prompt: Natural language travel request (e.g., "Plan a 5-day beach vacation from Mumbai under 40k")
+            max_retries: Number of retry attempts if budget validation fails
         """
+        print("Parsing travel request...")
+        
+        parse_task = self.tasks.parse_prompt_task(
+            agent=self.agents.prompt_parser_agent,
+            prompt=prompt
+        )
+        
+        parse_crew = Crew(
+            agents=[self.agents.prompt_parser_agent],
+            tasks=[parse_task],
+            process=Process.sequential,
+            verbose=False
+        )
+        
+        parse_result = parse_crew.kickoff()
+        inputs = self._parse_result(parse_result)
+        
+        print(f"Parsed request:")
+        print(f"  Budget: {inputs.get('budget')} {inputs.get('currency', 'INR')}")
+        print(f"  Duration: {inputs.get('duration')} days")
+        print(f"  Start: {inputs.get('start_city')}")
+        print(f"  Travelers: {inputs.get('people')}")
+        print(f"  Interests: {inputs.get('interests')}")
+        
+        if inputs.get('missing_info'):
+            print(f"  Note: {inputs.get('assumptions', 'Made some assumptions')}")
+        
+        return self.run(inputs, max_retries)
+    
+    def run(self, inputs, max_retries=2):
         self.validate_inputs(inputs)
         
         if 'currency' not in inputs:
@@ -115,8 +124,7 @@ class TravelPlannerFlow:
         if not feasibility['feasible']:
             raise ValueError(feasibility['message'])
         
-        print("Starting travel planning workflow...")
-        print(f"Planning trip from {inputs['start_city']}")
+        print(f"\nPlanning trip from {inputs['start_city']}")
         print(f"Budget: {inputs['budget']} {inputs['currency']}")
         print(f"Duration: {inputs['duration']} days")
         print(f"Travelers: {inputs['people']}")
@@ -128,7 +136,7 @@ class TravelPlannerFlow:
             try:
                 print(f"\nAttempt {attempt + 1}/{max_retries}")
                 
-                print(f"\nStep 1: Selecting optimal destination...")
+                print("\nStep 1: Selecting destination...")
                 city_task = self.tasks.choose_city_task(
                     agent=self.agents.city_selector_agent,
                     inputs=inputs
@@ -145,9 +153,7 @@ class TravelPlannerFlow:
                 city_data = self._parse_result(city_result)
                 destination_city = city_data.get('destination_city', 'Unknown')
                 
-                print(f"Destination selected: {destination_city}")
-                print(f"Reasoning: {city_data.get('reasoning', 'N/A')}")
-                
+                print(f"✓ Destination: {destination_city}")
                 inputs['destination_city'] = destination_city
                 
                 print(f"\nStep 2: Researching {destination_city}...")
@@ -166,9 +172,9 @@ class TravelPlannerFlow:
                 
                 research_result = research_crew.kickoff()
                 city_info = self._parse_result(research_result)
-                print(f"Research complete: Found {len(city_info.get('attractions', []))} attractions")
+                print(f"✓ Found {len(city_info.get('attractions', []))} attractions")
                 
-                print(f"\nStep 3: Planning transportation...")
+                print("\nStep 3: Planning transportation...")
                 transport_task = self.tasks.transport_task(
                     agent=self.agents.transport_agent,
                     inputs=inputs,
@@ -184,7 +190,7 @@ class TravelPlannerFlow:
                 
                 transport_result = transport_crew.kickoff()
                 transport_info = self._parse_result(transport_result)
-                print("Transportation options identified")
+                print("✓ Transportation planned")
                 
                 print(f"\nStep 4: Creating {inputs['duration']}-day itinerary...")
                 itinerary_task = self.tasks.itinerary_planning_task(
@@ -202,9 +208,9 @@ class TravelPlannerFlow:
                 
                 itinerary_result = itinerary_crew.kickoff()
                 itinerary_data = self._parse_result(itinerary_result)
-                print(f"Itinerary created with {len(itinerary_data.get('itinerary', []))} days planned")
+                print(f"✓ Itinerary created")
                 
-                print(f"\nStep 5: Creating detailed budget...")
+                print("\nStep 5: Planning budget...")
                 budget_task = self.tasks.budget_planning_task(
                     agent=self.agents.budget_manager_agent,
                     inputs=inputs,
@@ -221,9 +227,9 @@ class TravelPlannerFlow:
                 
                 budget_result = budget_crew.kickoff()
                 budget_data = self._parse_result(budget_result)
-                print(f"Budget planned: {budget_data.get('total_estimated_cost', 0)} {inputs['currency']}")
+                print(f"✓ Budget: {budget_data.get('total_estimated_cost', 0)} {inputs['currency']}")
                 
-                print(f"\nStep 6: Validating budget compliance...")
+                print("\nStep 6: Validating budget...")
                 budget_check_task = self.tasks.budget_check_task(
                     agent=self.agents.budget_checker_agent,
                     inputs=inputs,
@@ -244,8 +250,7 @@ class TravelPlannerFlow:
                 within_budget = budget_validation.get('within_budget', False)
                 computed_total = budget_validation.get('computed_total', budget_data.get('total_estimated_cost', 0))
                 
-                status = "Within budget" if within_budget else "Over budget"
-                print(f"{status}: {computed_total} {inputs['currency']}")
+                print(f"{'✓' if within_budget else '✗'} Total: {computed_total} {inputs['currency']}")
                 
                 validation_result = self.validate_budget_realistic(
                     {'budget': {'plan': budget_data, 'total_cost': computed_total}},
@@ -253,23 +258,20 @@ class TravelPlannerFlow:
                 )
                 
                 if not validation_result['realistic']:
-                    print("\nWarning: Budget calculations seem unrealistic:")
-                    for issue in validation_result['issues']:
-                        print(f"  - {issue}")
+                    print("Warning: Potential budget calculation issues detected")
                 
                 if not within_budget and attempt < max_retries - 1:
-                    print(f"\nPlan exceeds budget. Retrying with stricter constraints...")
+                    print(f"\nOver budget. Retrying with adjusted constraints...")
                     inputs['budget'] = int(original_budget * 0.85)
                     continue
                 
                 if not within_budget and attempt == max_retries - 1:
                     raise ValueError(
                         f"Could not generate plan within budget {original_budget} {inputs['currency']} "
-                        f"after {max_retries} attempts. Final cost: {computed_total} {inputs['currency']}. "
-                        f"Try increasing your budget or reducing trip duration/travelers."
+                        f"after {max_retries} attempts. Final cost: {computed_total} {inputs['currency']}."
                     )
                 
-                print("\nStep 7: Compiling final travel plan...")
+                print("\nStep 7: Finalizing plan...")
                 
                 final_plan = {
                     "metadata": {
@@ -300,14 +302,14 @@ class TravelPlannerFlow:
                 }
                 
                 print("\n" + "=" * 60)
-                print("Travel planning complete!")
+                print("✓ Travel plan complete!")
                 print("=" * 60)
                 
                 return final_plan
                 
             except Exception as e:
                 if attempt < max_retries - 1:
-                    print(f"\nError occurred: {e}")
+                    print(f"\nError: {e}")
                     print("Retrying...")
                     continue
                 else:
@@ -316,7 +318,6 @@ class TravelPlannerFlow:
         raise ValueError(f"Failed to generate plan after {max_retries} attempts")
     
     def _parse_result(self, result):
-        """Parse CrewAI result and extract JSON data."""
         try:
             if hasattr(result, 'raw'):
                 result_str = result.raw
@@ -334,7 +335,6 @@ class TravelPlannerFlow:
             
             return json.loads(json_str)
         except (json.JSONDecodeError, IndexError, AttributeError) as e:
-            print(f"Warning: Could not parse result as JSON: {e}")
             try:
                 from json_repair import repair_json
                 return json.loads(repair_json(json_str))
@@ -342,7 +342,6 @@ class TravelPlannerFlow:
                 return {"raw_output": str(result)}
     
     def save_plan(self, plan, filename="travel_plan.json"):
-        """Save the travel plan to a JSON file."""
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(plan, f, indent=2, ensure_ascii=False)
-        print(f"\nTravel plan saved to {filename}")
+        print(f"\nPlan saved to {filename}")
