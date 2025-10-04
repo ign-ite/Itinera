@@ -332,9 +332,12 @@ export default function App() {
                     <div className="mt-6 p-4 bg-blue-500/10 rounded-lg border border-blue-500/30">
                       <h4 className="text-blue-300 font-semibold mb-2">Recommendations:</h4>
                       <ul className="text-gray-300 text-sm space-y-1">
-                        {result.plan_data.recommendations.map((rec, idx) => (
-                          <li key={idx}>• {rec}</li>
-                        ))}
+                        {result.plan_data.recommendations.map((rec, idx) => {
+                          const recText = typeof rec === 'string'
+                          ? rec
+                          : rec.text || rec.area || JSON.stringify(rec);
+                          return <li key={idx}>• {recText}</li>;
+                        })}
                       </ul>
                     </div>
                   )}

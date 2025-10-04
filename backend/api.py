@@ -94,12 +94,15 @@ def generate_plan_sync(job_id: str, request: TravelRequest):
         
         plan_id = str(uuid.uuid4())
         
+        # Extract budget_limit from the right location
+        budget_limit = plan.get("budget", {}).get("budget_limit") or plan.get("metadata", {}).get("budget_limit", 0)
+        
         plans_store[plan_id] = {
             "plan_id": plan_id,
             "status": "completed",
             "destination": plan["destination"]["city"],
             "total_cost": plan["budget"]["total_cost"],
-            "budget_limit": plan["budget"]["budget_limit"],
+            "budget_limit": budget_limit,  # Fixed
             "within_budget": plan["budget"]["within_budget"],
             "created_at": datetime.now().isoformat(),
             "plan_data": plan
@@ -206,12 +209,15 @@ def create_plan_sync(request: TravelRequest):
         
         plan_id = str(uuid.uuid4())
         
+        # Extract budget_limit properly
+        budget_limit = plan.get("budget", {}).get("budget_limit") or plan.get("metadata", {}).get("budget_limit", 0)
+        
         result = {
             "plan_id": plan_id,
             "status": "completed",
             "destination": plan["destination"]["city"],
             "total_cost": plan["budget"]["total_cost"],
-            "budget_limit": plan["budget"]["budget_limit"],
+            "budget_limit": budget_limit,  # Fixed
             "within_budget": plan["budget"]["within_budget"],
             "created_at": datetime.now().isoformat(),
             "plan_data": plan

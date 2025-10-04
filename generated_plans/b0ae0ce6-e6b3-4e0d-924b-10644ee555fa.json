@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-04T19:32:45.577013",
+    "trip_duration": 7,
+    "travelers": 1,
+    "currency": "INR",
+    "start_city": "Mumbai",
+    "attempts": 1
+  },
+  "destination": {
+    "city": "Goa",
+    "selection_reasoning": "South Goa is the ideal destination as it perfectly aligns with your interests in beach relaxation and fits comfortably within your 50,000 INR budget for a 7-day solo trip from Mumbai during the summer.\n\n**Reasoning Breakdown:**\n\n*   **Budget-Friendly (Especially in Summer):** The summer season is the off-season in Goa, leading to significantly lower prices for accommodation, flights, and activities, along with fewer crowds. A 7-day trip can be comfortably managed for well under your budget, leaving a substantial buffer.\n\n*   **Excellent for Relaxation:** Unlike the bustling North, South Goa is renowned for its serene, pristine, and less crowded beaches like Palolem, Agonda, and Benaulim. It offers a tranquil atmosphere perfect for unwinding, reading a book, and enjoying the sea without the party-centric noise.\n\n*   **Easy Accessibility from Mumbai:** Goa is well-connected to Mumbai by multiple transport options. You can choose from affordable budget flights (1-1.5 hours), scenic and very cheap train journeys, or comfortable overnight buses, providing great flexibility.\n\n*   **Estimated Cost Breakdown:**\n    *   **Travel (Round Trip from Mumbai):** \u20b95,000 - \u20b98,000 (Train/Bus or a well-booked flight)\n    *   **Accommodation (7 Nights in a guesthouse/beach hut):** \u20b97,000 - \u20b910,000\n    *   **Food & Local Expenses:** \u20b910,000 - \u20b914,000 (Approx. \u20b91,500-\u20b92,000 per day)\n    *   **Local Transport (Scooter Rental for a week):** \u20b92,500 - \u20b93,500\n    *   **Miscellaneous/Activities:** \u20b95,000\n    *   **Total Estimated Cost:** **\u20b929,500 - \u20b940,500**\n\nThis estimated total is well within your \u20b950,000 budget, ensuring a comfortable and stress-free vacation focused purely on relaxation.",
+    "research": {
+      "attractions": [
+        "Explore the UNESCO World Heritage churches of Old Goa, like the Basilica of Bom Jesus and Se Cathedral, which are less crowded in the summer.",
+        "Wander through Fontainhas, Panjim's charming Latin Quarter, with its colorful Portuguese-style houses. It's a great activity for an early morning or late afternoon to avoid the heat.",
+        "Visit a local spice plantation such as the Sahakari Spice Farm or Tropical Spice Plantation. The lush greenery provides a cool respite from the summer sun, and tours often include a traditional Goan lunch.",
+        "Hike up to Chapora Fort for panoramic views of the coastline, famously featured in the movie 'Dil Chahta Hai'. Go during sunrise or sunset.",
+        "Relax on the quieter beaches of South Goa like Palolem or Agonda. While many beach shacks close for the off-season, the natural beauty and tranquility are unparalleled.",
+        "Discover Dudhsagar Falls. Access may be limited as the monsoon season approaches, so check with local tour operators. The view of the falls surrounded by lush greenery is spectacular.",
+        "Visit the Reis Magos Fort, a beautifully restored structure offering historical insights and stunning views of the Mandovi River."
+      ],
+      "cuisine": [
+        "Savor a traditional Goan Fish Curry Rice ('Xitt Codi') at a local, family-run restaurant for an authentic and affordable meal.",
+        "Try the fiery Pork Vindaloo or the coconut-based Chicken Xacuti, two iconic Goan dishes with rich, complex flavors.",
+        "Indulge in Bebinca, the layered 'queen of Goan desserts', made with coconut milk, flour, eggs, and ghee.",
+        "Stay refreshed with Sol Kadi, a cooling digestive drink made from coconut milk and kokum fruit, perfect for the summer heat.",
+        "Sample Feni, the local spirit distilled from either cashew apples (in season during summer) or coconut sap. Visit a local distillery for a tasting.",
+        "Enjoy fresh seafood like Prawn Balch\u00e3o (a spicy pickle) or Rava Fried Fish at a riverside eatery.",
+        "Feast on seasonal summer fruits like Mankurad mangoes, jackfruit, and fresh cashews, which are available in abundance at local markets."
+      ],
+      "cultural_norms": [
+        "Dress modestly when visiting temples, churches, and other religious sites. Ensure your shoulders and knees are covered as a sign of respect.",
+        "Embrace 'Susegad', the unique Goan concept of a relaxed, laid-back attitude towards life. Don't rush; enjoy the slow pace.",
+        "Politely bargain at local markets and with street vendors. It's an expected part of the shopping culture, but always do it with a smile.",
+        "Always ask for permission before taking photographs of people, especially locals and vendors in markets.",
+        "Learn a few Konkani phrases. A simple 'Dev Borem Korum' (May God do good for you) is a heartfelt way to say 'thank you' and is always appreciated.",
+        "Tipping is not mandatory but is appreciated for good service. A 10% tip at restaurants is a common practice.",
+        "Be mindful of local communities. Avoid loud music and parties in residential areas, especially late at night."
+      ],
+      "transportation_tips": [
+        "Renting a scooter or motorcycle is the most popular and cost-effective way to explore Goa. Always wear a helmet (it's the law for both driver and pillion) and carry a valid international or Indian driving license.",
+        "Use the local bus system for an extremely budget-friendly travel option. Buses connect most towns and villages, offering a truly local experience, though they can be slow.",
+        "For solo travelers, motorcycle taxis, known as 'pilots', are a quick and cheap way to cover short distances. They are easily identifiable by their yellow and black colors.",
+        "Use the state-run 'Goa Miles' app for ride-hailing services, which is often cheaper than negotiating with private taxis.",
+        "If you take a regular taxi, agree on the fare before you start your journey as most do not use a meter.",
+        "During summer, be extremely cautious when swimming. The sea can have strong undercurrents leading up to the monsoon season. Always swim on beaches with active lifeguards and pay attention to their flags and warnings."
+      ],
+      "local_activities": [
+        "Visit a cashew distillery. Summer is the peak cashew harvesting season (March-May), and you can witness the traditional process of making Feni.",
+        "Take a Goan cooking class to learn the secrets behind the region's unique cuisine. Many locals offer intimate classes in their homes.",
+        "Explore the vibrant Mapusa Friday Market or the Anjuna Flea Market (check for off-season timings) to shop for souvenirs, spices, and local handicrafts.",
+        "Go kayaking or stand-up paddleboarding in the calm backwaters of the Chapora or Sal rivers for a peaceful and scenic experience.",
+        "Attend a local village festival or 'jatra' if your travel dates coincide. The Feast of Saint Anthony in mid-June is a notable event.",
+        "Enjoy birdwatching at the Dr. Salim Ali Bird Sanctuary. Early mornings are the best time to spot a variety of local and migratory birds.",
+        "Take a heritage walk through the old Goan houses in areas like Loutolim or Chandor in South Goa to appreciate the unique Indo-Portuguese architecture."
+      ]
+    }
+  },
+  "transportation": {
+    "long_distance_options": [
+      "**Flight:** The fastest option. The flight itself is about 1 hour, but total travel time including airport transit, check-in, and security is typically 4-5 hours. Airlines like IndiGo, Vistara, and Air India offer multiple daily flights to both of Goa's airports (Dabolim - GOI and Mopa - GOX). This is the most convenient option for travelers prioritizing time over cost.",
+      "**Train:** A highly scenic and cost-effective choice. The journey along the Konkan Railway route takes approximately 8-12 hours. Trains like the Tejas Express offer high speed and comfort, while overnight sleeper trains are excellent for budget travelers and save on one night's accommodation cost. Booking well in advance is essential.",
+      "**Overnight Bus:** The most accessible budget option, especially for last-minute plans. The journey takes 12-15 hours. A variety of operators offer services ranging from basic seaters to comfortable AC sleeper Volvo buses, with multiple pickup points across Mumbai.",
+      "**Self-Drive / Car Rental:** The most flexible option, allowing for stops at will. The drive takes 10-12 hours via NH 48. This is cost-effective for groups or families and provides the convenience of having your own vehicle upon arrival in Goa. Factoring in fuel and tolls is necessary."
+    ],
+    "local_transport_options": [
+      "**Scooter/Motorbike Rental:** The most popular, affordable, and efficient way to explore Goa. It provides complete freedom to navigate narrow village roads and find parking at crowded beaches. Daily rentals are widely available and cost-effective.",
+      "**Car Rental (Self-Drive):** Ideal for families, larger groups, or for travel during the monsoon season. It offers comfort and is better suited for covering longer distances, such as traveling between North and South Goa.",
+      "**Taxis & App-Based Cabs:** Local tourist taxis and the app-based service 'Goa Miles' are available. Taxis are convenient for airport transfers or point-to-point trips but are significantly more expensive for sightseeing. Pre-negotiation of fares with local taxis is crucial.",
+      "**Auto-rickshaws & Motorcycle Pilots:** Best for short-distance travel within a specific area (e.g., from your hotel to a nearby restaurant). Motorcycle 'pilots' are a unique and cheap option for solo travelers.",
+      "**Public Buses (Kadamba):** The most economical mode of transport, connecting major towns and some popular beaches. However, they operate on fixed schedules, can be crowded, and offer limited connectivity to more remote areas, making them the least convenient option for tourists."
+    ],
+    "reasoning": "The optimal transportation strategy from Mumbai to Goa depends on the traveler's priorities of time, budget, and flexibility. \n\n**For Long-Distance Travel:**\n- **Fastest:** A flight is unquestionably the best choice for speed and convenience.\n- **Most Scenic & Budget-Friendly:** The train offers a superior travel experience at a low cost, making it the best all-around value option if time is not the primary constraint.\n- **Most Flexible:** Driving your own car provides ultimate freedom for the journey and is economical for groups.\n\n**For Local Transportation:**\n- **Overall Best:** Renting a scooter offers the perfect blend of low cost, flexibility, and ease of access to almost all parts of Goa. It is the quintessential Goan experience.\n- **Best for Families/Groups:** Renting a car provides necessary comfort, space, and protection from the elements, making it the preferred choice for families or those traveling in groups."
+  },
+  "itinerary": {
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "activity": "Arrival and Check-in",
+            "time": "Afternoon (2:00 PM)",
+            "location": "North Goa (e.g., Anjuna or Vagator)",
+            "description": "Arrive at Goa Airport (Dabolim) or a train station (Madgaon/Vasco). Check into your pre-booked guesthouse. Settle in and embrace the Goan 'Susegad' (relaxed) attitude.",
+            "transportation": "Use the 'Goa Miles' app for a ride-hailing service from the airport/station to your accommodation. It's generally more affordable than private taxis."
+          },
+          {
+            "activity": "Scooter Rental & Local Exploration",
+            "time": "Late Afternoon (4:00 PM)",
+            "location": "Your accommodation area",
+            "description": "Rent a scooter or motorcycle for the duration of your stay. This is the most convenient and budget-friendly way to explore. Remember to carry your license and always wear a helmet.",
+            "transportation": "On foot to a local rental shop, then by your rented scooter."
+          },
+          {
+            "activity": "Sunset at Vagator Beach",
+            "time": "Evening (5:30 PM - 7:00 PM)",
+            "location": "Vagator Beach",
+            "description": "Ride to Vagator Beach, known for its dramatic red cliffs. Find a comfortable spot at a permanent shack or viewpoint to watch a beautiful sunset over the Arabian Sea.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Dinner in Anjuna",
+            "time": "Evening (8:00 PM)",
+            "location": "Anjuna",
+            "description": "Enjoy a relaxed dinner at a place like Artjuna Garden Cafe. Savor some healthy food and soak in the bohemian vibe. For a taste of local cuisine, find a family-run eatery and try the Rava Fried Fish.",
+            "transportation": "Rented Scooter"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "activity": "Sunrise Hike to Chapora Fort",
+            "time": "Early Morning (6:00 AM - 8:00 AM)",
+            "location": "Chapora Fort",
+            "description": "Beat the summer heat with an early morning visit to the iconic 'Dil Chahta Hai' fort. The panoramic views of the coastline and the Chapora River are breathtaking at sunrise.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Breakfast & Midday Rest",
+            "time": "Morning (9:00 AM - 3:00 PM)",
+            "location": "Your accommodation/local cafe",
+            "description": "Have a hearty breakfast at a local cafe. Head back to your guesthouse to rest and avoid the peak afternoon heat. A nap or reading a book is a perfect way to spend this time.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Explore Fontainhas, the Latin Quarter",
+            "time": "Late Afternoon (4:00 PM - 6:00 PM)",
+            "location": "Fontainhas, Panjim",
+            "description": "Ride to Panjim and take a heritage walk through the charming Latin Quarter. Admire the colorful Portuguese-style houses and narrow winding streets. It's a photographer's paradise.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Authentic Goan Dinner",
+            "time": "Evening (7:30 PM)",
+            "location": "Panjim",
+            "description": "Dine at a renowned local restaurant like Viva Panjim for an authentic Goan meal. This is the perfect opportunity to try the classic Goan Fish Curry Rice ('Xitt Codi') and the refreshing Sol Kadi.",
+            "transportation": "Rented Scooter"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "activity": "Visit UNESCO Heritage Sites",
+            "time": "Morning (9:00 AM - 12:00 PM)",
+            "location": "Old Goa",
+            "description": "Explore the historic churches of Old Goa. Visit the Basilica of Bom Jesus, which holds the mortal remains of St. Francis Xavier, and the magnificent S\u00e9 Cathedral. Dress modestly with shoulders and knees covered.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Spice Plantation Tour & Lunch",
+            "time": "Afternoon (1:00 PM - 4:00 PM)",
+            "location": "Sahakari Spice Farm or Tropical Spice Plantation",
+            "description": "Escape the heat amidst lush greenery. Take a guided tour of a spice plantation to learn about various spices and local agriculture. The tour typically concludes with a delicious, traditional Goan buffet lunch.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Cashew Feni Tasting",
+            "time": "Evening (5:00 PM)",
+            "location": "Local Cashew Distillery",
+            "description": "Since it's summer (the cashew harvesting season), visit a local distillery to see the traditional process of making Feni. You can also sample the famous Goan spirit.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Relaxed Evening",
+            "time": "Evening (7:00 PM onwards)",
+            "location": "Your accommodation area",
+            "description": "After a full day, have a light dinner near your guesthouse and pack for your transfer to South Goa the next day.",
+            "transportation": "Rented Scooter"
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "activities": [
+          {
+            "activity": "Travel to South Goa",
+            "time": "Morning (10:00 AM)",
+            "location": "From North Goa to South Goa (e.g., Palolem)",
+            "description": "Check out from your North Goa accommodation. The journey to the south takes about 2-3 hours. Enjoy the scenic drive through Goan villages.",
+            "transportation": "Book a taxi or use 'Goa Miles'. Traveling by scooter with luggage is not recommended for this distance."
+          },
+          {
+            "activity": "Check-in and Unwind",
+            "time": "Afternoon (1:00 PM)",
+            "location": "Palolem or Agonda",
+            "description": "Check into your beach hut or guesthouse in South Goa. These areas are known for their tranquility and stunning natural beauty. Have lunch at a local restaurant.",
+            "transportation": "On foot"
+          },
+          {
+            "activity": "Relax on Palolem Beach",
+            "time": "Afternoon (3:00 PM onwards)",
+            "location": "Palolem Beach",
+            "description": "Spend the rest of the day relaxing on the crescent-shaped Palolem Beach. Read a book, listen to the waves, and simply unwind. Be cautious if you decide to swim, as pre-monsoon currents can be strong. Look for lifeguard flags.",
+            "transportation": "On foot"
+          },
+          {
+            "activity": "Dinner by the Sea",
+            "time": "Evening (7:30 PM)",
+            "location": "Palolem Beach",
+            "description": "Enjoy a quiet dinner at one of the permanent restaurants along the beach. Savor some fresh seafood while enjoying the sound of the waves.",
+            "transportation": "On foot"
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "activities": [
+          {
+            "activity": "Morning Beach Walk & Yoga",
+            "time": "Morning (7:00 AM - 9:00 AM)",
+            "location": "Palolem or Agonda Beach",
+            "description": "Start your day with a peaceful walk along the shore. The beaches are serene and beautiful in the early morning. You can also join a drop-in yoga class if available.",
+            "transportation": "On foot"
+          },
+          {
+            "activity": "Kayaking in the Backwaters",
+            "time": "Late Morning (10:00 AM)",
+            "location": "Backwaters of Sal River or near Palolem",
+            "description": "Rent a kayak and explore the calm, mangrove-lined backwaters. It's a peaceful experience and a great way to spot local birdlife.",
+            "transportation": "On foot or a short auto-rickshaw ride"
+          },
+          {
+            "activity": "Lazy Lunch and Siesta",
+            "time": "Afternoon (1:00 PM - 4:00 PM)",
+            "location": "Your accommodation or a local cafe",
+            "description": "Indulge in a long, lazy lunch. Try the spicy Pork Vindaloo or a coconut-based Chicken Xacuti. Follow it up with a well-deserved afternoon siesta.",
+            "transportation": "On foot"
+          },
+          {
+            "activity": "Sunset at Agonda Beach",
+            "time": "Evening (5:30 PM)",
+            "location": "Agonda Beach",
+            "description": "If you're in Palolem, take a short ride to Agonda Beach. It's a quieter, protected turtle nesting site, perfect for a tranquil sunset experience.",
+            "transportation": "Rented Scooter (rent one locally in South Goa for a day or two)"
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "activities": [
+          {
+            "activity": "South Goa Heritage Exploration",
+            "time": "Morning (9:30 AM - 1:00 PM)",
+            "location": "Chandor or Loutolim",
+            "description": "Take a scooter ride to explore the heritage villages of South Goa. Visit a historic Indo-Portuguese mansion like the Menezes Braganza Pereira House in Chandor to get a glimpse into Goa's aristocratic past.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Goan Cooking Class",
+            "time": "Afternoon (3:00 PM - 6:00 PM)",
+            "location": "Local cooking school or homestay",
+            "description": "Immerse yourself in Goan culture by taking a cooking class. Learn the secrets behind the region's unique cuisine and prepare a few classic dishes yourself. Book this in advance.",
+            "transportation": "Rented Scooter"
+          },
+          {
+            "activity": "Farewell Dinner",
+            "time": "Evening (7:30 PM)",
+            "location": "Your cooking class location or a recommended restaurant",
+            "description": "Enjoy the delicious meal you helped prepare as your farewell dinner. Alternatively, head to a special restaurant in the area. Don't forget to try Bebinca, the layered 'queen of Goan desserts'.",
+            "transportation": "Rented Scooter"
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "activities": [
+          {
+            "activity": "Last Goan Breakfast & Souvenir Shopping",
+            "time": "Morning (9:00 AM - 11:00 AM)",
+            "location": "Palolem/Agonda area",
+            "description": "Enjoy a final Goan breakfast. Take a last walk on the beach. Buy some local produce like the famous Mankurad mangoes, cashews, or spices from a local market to take home.",
+            "transportation": "On foot"
+          },
+          {
+            "activity": "Check-out and Departure",
+            "time": "Late Morning (12:00 PM)",
+            "location": "Your accommodation",
+            "description": "Check out from your guesthouse. Head to Goa Airport (Dabolim) or the train station for your journey back home, filled with relaxing memories of 'Susegad'.",
+            "transportation": "Pre-book a taxi or use the 'Goa Miles' app for your transfer to the airport/station."
+          }
+        ]
+      }
+    ]
+  },
+  "budget": {
+    "plan": {
+      "transportation": [
+        {
+          "description": "Round trip: Flight",
+          "cost": 7000,
+          "calculation": "Flight \u00d7 1 = 7000 INR"
+        },
+        {
+          "description": "Local transport (Scooter Rental + Fuel)",
+          "cost": 3850,
+          "calculation": "550 INR \u00d7 7 days = 3850 INR"
+        }
+      ],
+      "accommodation": [
+        {
+          "description": "Guesthouse / Budget Hotel",
+          "cost": 14000,
+          "calculation": "2000 INR \u00d7 7 nights = 14000 INR"
+        }
+      ],
+      "meals": [
+        {
+          "type": "Breakfast",
+          "cost": 1050,
+          "calculation": "1 \u00d7 7 \u00d7 150 = 1050 INR"
+        },
+        {
+          "type": "Lunch",
+          "cost": 1750,
+          "calculation": "1 \u00d7 7 \u00d7 250 = 1750 INR"
+        },
+        {
+          "type": "Dinner",
+          "cost": 2100,
+          "calculation": "1 \u00d7 7 \u00d7 300 = 2100 INR"
+        }
+      ],
+      "activities": [
+        {
+          "name": "Water Sports Package (e.g., Parasailing, Jet Ski)",
+          "cost": 2000,
+          "calculation": "2000 \u00d7 1"
+        },
+        {
+          "name": "Dudhsagar Falls Day Trip (Shared Jeep & Fees)",
+          "cost": 1800,
+          "calculation": "1800 \u00d7 1"
+        },
+        {
+          "name": "Spice Plantation Tour with Lunch",
+          "cost": 500,
+          "calculation": "500 \u00d7 1"
+        },
+        {
+          "name": "Nightlife & Miscellaneous Entertainment",
+          "cost": 3000,
+          "calculation": "3000 \u00d7 1"
+        },
+        {
+          "name": "Shopping (Anjuna Flea Market, Souvenirs)",
+          "cost": 2000,
+          "calculation": "2000 \u00d7 1"
+        }
+      ],
+      "emergency_fund": {
+        "description": "10% of sub-total (39,050 INR)",
+        "cost": 3905
+      },
+      "visa_fees": {
+        "description": "Domestic Travel",
+        "cost": 0
+      },
+      "total_estimated_cost": 42955,
+      "budget_status": "within",
+      "cost_cutting_suggestions": [
+        "Opt for a train (AC Sleeper/Chair Car) instead of a flight to save approximately 3,000 - 4,000 INR.",
+        "Choose a private room in a highly-rated hostel or a more basic guesthouse (around 1,500 INR/night) to save up to 3,500 INR on accommodation.",
+        "Eat more meals at local beach shacks and small eateries instead of mid-range restaurants to reduce daily food costs.",
+        "Prioritize free activities like beach hopping, visiting Old Goa churches, and exploring local markets over multiple paid excursions."
+      ]
+    },
+    "validation": {
+      "currency": "INR",
+      "verified_at": "2024-05-21T11:30:00Z",
+      "categories": {
+        "transportation": [
+          {
+            "description": "Round trip: Flight",
+            "cost": 7000,
+            "calculation": "Flight \u00d7 1 = 7000 INR",
+            "status": "Verified"
+          },
+          {
+            "description": "Local transport (Scooter Rental + Fuel)",
+            "cost": 3850,
+            "calculation": "550 INR \u00d7 7 days = 3850 INR",
+            "status": "Verified"
+          }
+        ],
+        "accommodation": [
+          {
+            "description": "Guesthouse / Budget Hotel",
+            "cost": 14000,
+            "calculation": "2000 INR \u00d7 7 nights = 14000 INR",
+            "status": "Verified"
+          }
+        ],
+        "meals": [
+          {
+            "type": "Breakfast",
+            "cost": 1050,
+            "calculation": "1 \u00d7 7 \u00d7 150 = 1050 INR",
+            "status": "Verified"
+          },
+          {
+            "type": "Lunch",
+            "cost": 1750,
+            "calculation": "1 \u00d7 7 \u00d7 250 = 1750 INR",
+            "status": "Verified"
+          },
+          {
+            "type": "Dinner",
+            "cost": 2100,
+            "calculation": "1 \u00d7 7 \u00d7 300 = 2100 INR",
+            "status": "Verified"
+          }
+        ],
+        "activities": [
+          {
+            "name": "Water Sports Package (e.g., Parasailing, Jet Ski)",
+            "cost": 2000,
+            "calculation": "2000 \u00d7 1",
+            "status": "Verified"
+          },
+          {
+            "name": "Dudhsagar Falls Day Trip (Shared Jeep & Fees)",
+            "cost": 1800,
+            "calculation": "1800 \u00d7 1",
+            "status": "Verified"
+          },
+          {
+            "name": "Spice Plantation Tour with Lunch",
+            "cost": 500,
+            "calculation": "500 \u00d7 1",
+            "status": "Verified"
+          },
+          {
+            "name": "Nightlife & Miscellaneous Entertainment",
+            "cost": 3000,
+            "calculation": "3000 \u00d7 1",
+            "status": "Verified"
+          },
+          {
+            "name": "Shopping (Anjuna Flea Market, Souvenirs)",
+            "cost": 2000,
+            "calculation": "2000 \u00d7 1",
+            "status": "Verified"
+          }
+        ],
+        "emergency_fund": {
+          "description": "10% of sub-total (39,050 INR)",
+          "cost": 3905,
+          "status": "Verified"
+        },
+        "visa_fees": {
+          "description": "Domestic Travel",
+          "cost": 0,
+          "status": "Verified"
+        }
+      },
+      "computed_total": 42955,
+      "original_total_in_plan": 42955,
+      "discrepancy": 0,
+      "within_budget": true,
+      "over_by": 0,
+      "flags": [
+        {
+          "code": "COMPLIANT_CALCULATION",
+          "message": "All line-item calculations and category totals in the submitted plan are mathematically correct."
+        },
+        {
+          "code": "ACCURATE_TOTAL",
+          "message": "The 'total_estimated_cost' provided in the plan matches the verified sum of all expenses."
+        },
+        {
+          "code": "GOOD_PRACTICE_FUND",
+          "message": "The emergency fund is correctly calculated at 10% of the sub-total, which is a commendable planning practice."
+        }
+      ],
+      "recommendations": [
+        "The plan is fully compliant and within the budget limit of 50,000 INR, with a remaining buffer of 7,045 INR.",
+        "The cost-cutting suggestions provided in the original plan are valid and can be considered for further savings:",
+        "Opt for a train (AC Sleeper/Chair Car) instead of a flight to save approximately 3,000 - 4,000 INR.",
+        "Choose a private room in a highly-rated hostel or a more basic guesthouse (around 1,500 INR/night) to save up to 3,500 INR on accommodation.",
+        "Eat more meals at local beach shacks and small eateries instead of mid-range restaurants to reduce daily food costs.",
+        "Prioritize free activities like beach hopping, visiting Old Goa churches, and exploring local markets over multiple paid excursions."
+      ]
+    },
+    "total_cost": 42955,
+    "within_budget": true,
+    "budget_limit": 50000,
+    "realistic": true,
+    "validation_issues": []
+  },
+  "recommendations": [
+    "The plan is fully compliant and within the budget limit of 50,000 INR, with a remaining buffer of 7,045 INR.",
+    "The cost-cutting suggestions provided in the original plan are valid and can be considered for further savings:",
+    "Opt for a train (AC Sleeper/Chair Car) instead of a flight to save approximately 3,000 - 4,000 INR.",
+    "Choose a private room in a highly-rated hostel or a more basic guesthouse (around 1,500 INR/night) to save up to 3,500 INR on accommodation.",
+    "Eat more meals at local beach shacks and small eateries instead of mid-range restaurants to reduce daily food costs.",
+    "Prioritize free activities like beach hopping, visiting Old Goa churches, and exploring local markets over multiple paid excursions."
+  ]
+}
