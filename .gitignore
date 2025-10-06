@@ -2,3 +2,5 @@ itin/
 .vscode
 .env
 plans/
+__pycache__/
+*.pyc
