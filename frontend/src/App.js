@@ -74,11 +74,12 @@ function LoadingScreen({ onComplete }) {
 
   return (
     <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
+      {/* Use your actual logo files */}
       <div className="mb-8">
         <img 
-          src="/logo192.png" 
+          src="/android-chrome-512x512.png" 
           alt="Itinera" 
-          className="w-24 h-24 animate-pulse"
+          className="w-32 h-32 animate-pulse"
         />
       </div>
 
@@ -203,6 +204,11 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-black transition-colors duration-500">
       <header className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
         <div className="flex items-center gap-4">
+          <img
+            src="/favicon-32x32.png"
+            alt="Itinera Logo"
+            className = "w-8 h-8"
+          />
           <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
             Itinera<span className="text-amber-500">.</span>
           </div>
