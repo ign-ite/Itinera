@@ -2,7 +2,7 @@ from crewai import Agent, LLM
 import os
 
 class ItineraAgents:
-    def __init__(self, model="gemini/gemini-2.5-pro", api_key=None):
+    def __init__(self, model="gemini/gemini-2.5-flash", api_key=None):
         self.model = model
         self.api_key = api_key or os.getenv("GOOGLE_API_KEY")
         

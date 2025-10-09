@@ -4,10 +4,10 @@ from tasks import ItineraTasks
 import json
 import os
 from datetime import datetime
-
+import time
 
 class TravelPlannerFlow:
-    def __init__(self, model="gemini/gemini-2.5-pro", api_key=None):
+    def __init__(self, model="gemini/gemini-2.5-flash", api_key=None):
         self.agents = ItineraAgents(model=model, api_key=api_key)
         self.tasks = ItineraTasks()
         
@@ -78,42 +78,52 @@ class TravelPlannerFlow:
         }
     
     def run_from_prompt(self, prompt, max_retries=2):
-        """
-        Generate travel plan from natural language prompt
+        for attempt in range(max_retries):
+            try:
+                """
+                Generate travel plan from natural language prompt
         
-        Args:
-            prompt: Natural language travel request (e.g., "Plan a 5-day beach vacation from Mumbai under 40k")
-            max_retries: Number of retry attempts if budget validation fails
-        """
-        print("Parsing travel request...")
+                Args:
+                    prompt: Natural language travel request (e.g., "Plan a 5-day beach vacation from Mumbai under 40k")
+                    max_retries: Number of retry attempts if budget validation fails
+                """
+                print("Parsing travel request...")
         
-        parse_task = self.tasks.parse_prompt_task(
-            agent=self.agents.prompt_parser_agent,
-            prompt=prompt
-        )
-        
-        parse_crew = Crew(
-            agents=[self.agents.prompt_parser_agent],
-            tasks=[parse_task],
-            process=Process.sequential,
-            verbose=False
-        )
-        
-        parse_result = parse_crew.kickoff()
-        inputs = self._parse_result(parse_result)
-        
-        print(f"Parsed request:")
-        print(f"  Budget: {inputs.get('budget')} {inputs.get('currency', 'INR')}")
-        print(f"  Duration: {inputs.get('duration')} days")
-        print(f"  Start: {inputs.get('start_city')}")
-        print(f"  Travelers: {inputs.get('people')}")
-        print(f"  Interests: {inputs.get('interests')}")
-        
-        if inputs.get('missing_info'):
-            print(f"  Note: {inputs.get('assumptions', 'Made some assumptions')}")
-        
-        return self.run(inputs, max_retries)
-    
+                parse_task = self.tasks.parse_prompt_task(
+                    agent=self.agents.prompt_parser_agent,
+                    prompt=prompt
+                )
+
+                parse_crew = Crew(
+                    agents=[self.agents.prompt_parser_agent],
+                    tasks=[parse_task],
+                    process=Process.sequential,
+                    verbose=False
+                )
+
+                parse_result = parse_crew.kickoff()
+                inputs = self._parse_result(parse_result)
+
+                print(f"Parsed request:")
+                print(f"  Budget: {inputs.get('budget')} {inputs.get('currency', 'INR')}")
+                print(f"  Duration: {inputs.get('duration')} days")
+                print(f"  Start: {inputs.get('start_city')}")
+                print(f"  Travelers: {inputs.get('people')}")
+                print(f"  Interests: {inputs.get('interests')}")
+
+                if inputs.get('missing_info'):
+                    print(f"  Note: {inputs.get('assumptions', 'Made some assumptions')}")
+
+                return self.run(inputs, max_retries)
+            except Exception as e:
+                if "overloaded" in str(e) or "503" in str(e):
+                        if attempt < max_retries - 1:
+                            wait_time = (attempt + 1) * 10
+                            print(f"Model overloaded, retrying in {wait_time} seconds... ")
+                            time.sleep(wait_time)
+                            continue
+                raise
+
     def run(self, inputs, max_retries=2):
         self.validate_inputs(inputs)
         
