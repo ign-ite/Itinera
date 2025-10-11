@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T16:10:39.840589",
+    "trip_duration": 4,
+    "travelers": 4,
+    "currency": "INR",
+    "start_city": "Kurnool",
+    "attempts": 1
+  },
+  "destination": {
+    "city": "Kochi (Ernakulam)",
+    "selection_reasoning": "Considering your budget of 24000 INR for 4 people over 4 days, starting from Kurnool during winter, Kochi (Ernakulam) emerges as the most affordable and realistic destination in Kerala for general sightseeing and exploration. Here's a detailed breakdown:\n\n1.  **Travel Costs (Kurnool to Kerala):** The most significant cost will be long-distance travel. Train travel (Sleeper Class) from Kurnool City (KRNT) to Ernakulam Junction (ERS) is the most budget-friendly option. An estimated round trip for 4 people would be approximately 5600 INR (4 people x 2 ways x ~700 INR/person).\n    *   *Remaining Budget: 24000 - 5600 = 18400 INR for 4 days (3 nights) for 4 people.*\n\n2.  **Accommodation (3 nights for 4 people):** Kochi offers a wide range of budget-friendly hotels and homestays. You can find comfortable family rooms or two double rooms for an average of 1500-1800 INR per night. For 3 nights, this would be approximately 4500-5400 INR.\n    *   *Remaining Budget: 18400 - 5400 = 13000 INR for 4 days for food, local transport, and activities.*\n\n3.  **Food (4 days for 4 people):** Kerala cuisine is delicious and affordable. Eating at local eateries and mid-range restaurants can keep costs down. Budgeting around 150-250 INR per person per meal (e.g., 60-80 for breakfast, 150-200 for lunch/dinner) is realistic. For 4 people over 4 days (approx. 10-12 meals per person), this would be around 8000-9000 INR.\n    *   *Remaining Budget: 13000 - 8500 = 4500 INR for local transport and activities.*\n\n4.  **Local Transport & Activities (4 days for 4 people):** Kochi boasts an excellent and affordable public transport system. You can utilize local buses, auto-rickshaws, and the cheap public ferry service (especially for Fort Kochi and Mattancherry). Entry fees to most historical sites (e.g., Mattancherry Palace, Paradesi Synagogue) are minimal (typically 10-50 INR per person). A Kathakali show might cost 300-500 INR per person. The remaining 4500 INR (approx. 1125 INR per day) is sufficient for exploring Fort Kochi, visiting historical sites, enjoying Marine Drive, and experiencing some local culture.\n\n**Why Kochi is ideal:**\n*   **Accessibility:** As a major railway hub, Ernakulam is easily reachable from Kurnool.\n*   **Diverse Exploration:** Offers a rich blend of history (Fort Kochi), culture, urban experiences, and easy access to backwaters (via public ferries or short trips).\n*   **Budget-Friendly Infrastructure:** Abundant affordable accommodation, food, and efficient public transport make it suitable for a tight budget.\n*   **Season:** Winter provides pleasant weather for sightseeing.\n\nThis plan allows for a comprehensive yet budget-conscious exploration of a significant part of Kerala.",
+    "research": {
+      "attractions": [
+        "Chinese Fishing Nets (Fort Kochi): Witness the iconic cantilevered nets in action, especially at sunset. Free to observe.",
+        "St. Francis Church (Fort Kochi): India's oldest European church, Vasco da Gama was originally buried here. Free entry.",
+        "Santa Cruz Basilica (Fort Kochi): A grand and beautiful church with stunning interiors. Free entry.",
+        "Paradesi Synagogue (Mattancherry, Jew Town): India's oldest active synagogue, known for its exquisite architecture and Chinese tiles. Modest entry fee.",
+        "Mattancherry Palace (Dutch Palace) (Mattancherry): Features murals depicting Hindu temple art and portraits of the Rajas of Kochi. Modest entry fee.",
+        "Jew Town (Mattancherry): Explore the narrow lanes filled with antique shops, spice markets, and cafes.",
+        "Marine Drive (Ernakulam): A picturesque promenade perfect for evening strolls and enjoying the city skyline. Free.",
+        "Ernakulam Shiva Temple (Ernakulam): A prominent Hindu temple in the heart of the city, known for its traditional Kerala architecture. Free entry (dress code applies).",
+        "Hill Palace Museum (Tripunithura): Kerala's largest archaeological museum, showcasing royal artifacts and a deer park. Modest entry fee."
+      ],
+      "cuisine": [
+        "Kerala Sadya: A traditional vegetarian feast served on a banana leaf, offering a variety of curries, rice, and desserts. Look for local 'meals' restaurants for authentic and affordable options.",
+        "Meen Curry (Fish Curry): Freshly caught fish prepared in a spicy coconut-based gravy. Abundant in coastal areas, try local 'thattukadas' (street food stalls) or small eateries.",
+        "Appam with Stew: Soft, lacy rice pancakes paired with a mild coconut milk-based stew (vegetable or chicken). A popular breakfast or dinner.",
+        "Puttu and Kadala Curry: Steamed rice cakes (cylindrical) served with black chickpea curry. A staple breakfast dish.",
+        "Pazham Pori (Banana Fritters): Ripe plantains dipped in a sweet flour batter and deep-fried, a popular tea-time snack.",
+        "Unniyappam: Small, round, fried sweet snacks made from rice flour, jaggery, and banana.",
+        "Filter Coffee & Chai: Enjoy strong, frothy South Indian filter coffee or spiced chai from local tea stalls.",
+        "Fresh Seafood: Beyond curries, try grilled or fried fish, prawns, and squid from local shacks, especially in Fort Kochi."
+      ],
+      "cultural_norms": [
+        "Dress Modestly: Especially when visiting religious sites (temples, churches, synagogues). Shoulders and knees should be covered. Some temples may require men to remove shirts and wear a 'mundu' (dhoti).",
+        "Remove Footwear: Before entering homes, temples, and sometimes smaller shops or guesthouses. Look for designated shoe-keeping areas.",
+        "Eat with Right Hand: When eating traditional meals, particularly those served on a banana leaf, use your right hand. It's considered cleaner.",
+        "Respect Religious Practices: Maintain silence and respect during prayers or rituals in places of worship.",
+        "Bargaining: Common in local markets (e.g., spice market, antique shops) but not in fixed-price stores or restaurants.",
+        "Ask Permission for Photos: Always ask before taking photos of people, especially women or those in religious attire.",
+        "Public Displays of Affection: Generally frowned upon in public. Maintain a respectful distance.",
+        "Greetings: A simple 'Namaste' or 'Namaskaram' (folding hands) is a respectful greeting."
+      ],
+      "transportation_tips": [
+        "Auto-rickshaws (Tuk-tuks): Widely available. Always negotiate the fare before starting the journey or insist on the meter. Ride-hailing apps like Uber and Ola are also available and often more reliable for pricing.",
+        "Local Buses: An extremely affordable way to travel within Ernakulam and between Fort Kochi/Mattancherry and Ernakulam. Look for buses heading to 'Ernakulam Jetty' or 'Fort Kochi'.",
+        "Ferries: The most scenic and budget-friendly way to travel between Fort Kochi, Mattancherry, and Ernakulam (Mainland). The jetty in Fort Kochi is near the Chinese Fishing Nets. Tickets are very cheap.",
+        "Walking & Cycling: Fort Kochi is very walkable. Renting a bicycle is a great and affordable way to explore the area at your own pace.",
+        "Ride-sharing Apps: Uber and Ola operate in Kochi for both cars and auto-rickshaws, providing transparent pricing and convenience.",
+        "Kochi Metro: Connects various parts of Ernakulam mainland, useful for longer distances within the city, but doesn't extend directly to Fort Kochi."
+      ],
+      "local_activities": [
+        "Fort Kochi Carnival (late December - early January): If traveling during this period, experience the vibrant 10-day carnival with parades, cultural performances, and the burning of 'Pappanji' (a giant effigy) on New Year's Eve.",
+        "Kathakali Performance: Witness a traditional Kathakali dance-drama, known for its elaborate costumes, makeup, and expressive storytelling. Many centers in Fort Kochi offer evening shows, often with a pre-show makeup demonstration (budget options available).",
+        "Spice Market Exploration (Mattancherry, Jew Town): Wander through the aromatic spice markets, learning about the region's rich spice trade history and perhaps picking up some fresh spices.",
+        "Backwater Boat Ride (on a budget): Instead of expensive houseboats, opt for a public ferry ride through the backwaters or a short, local canoe trip for an authentic and affordable experience.",
+        "Art Gallery Hopping (Fort Kochi): Explore numerous small art galleries and cafes, especially during the Kochi-Muziris Biennale (if ongoing, typically Dec-Mar, though not every year).",
+        "Cooking Class: Many homestays and local culinary schools offer affordable cooking classes to learn how to prepare authentic Kerala dishes.",
+        "Sunset at Chinese Fishing Nets: A quintessential Kochi experience. Find a spot along the shore and watch the sun dip below the horizon, silhouetting the nets."
+      ]
+    }
+  },
+  "transportation": {
+    "long_distance_options": [
+      "Train (Kurnool City to Ernakulam Junction/Town)",
+      "Flight (via Hyderabad or direct from Kurnool if available)",
+      "Bus (Kurnool to Kochi via Bengaluru/Hyderabad)"
+    ],
+    "local_transport_options": [
+      "Kochi Metro",
+      "Cabs (Ola/Uber/Local Taxis)",
+      "Auto-rickshaws",
+      "Buses (KSRTC/Private)",
+      "Ferries / Water Metro"
+    ],
+    "reasoning": "For long-distance travel from Kurnool to Kochi (Ernakulam), three primary options are recommended based on a balance of cost, convenience, and travel time:\n\n**1. Train (Recommended for Balance):**\n*   **Route:** Kurnool City (KRNT) to Ernakulam Junction (ERS) or Ernakulam Town (ERN). Direct trains or those with minimal changes via Guntakal/Dhone are available (e.g., Mangala Lakshadweep Express). \n*   **Travel Time:** Approximately 16-18 hours, often an overnight journey.\n*   **Cost:** Highly cost-effective. Sleeper class (Non-AC) typically ranges from \u20b9500-700, while AC 3-Tier costs around \u20b91300-1800.\n*   **Convenience:** Offers a comfortable journey, especially for overnight travel, allowing passengers to rest and avoid road fatigue. Reservations are highly recommended for confirmed seating.\n\n**2. Flight (Recommended for Speed):**\n*   **Route:** The most practical approach is to travel from Kurnool to Hyderabad Rajiv Gandhi International Airport (HYD) by road (cab/bus, approx. 3.5-4 hours) and then take a direct flight from HYD to Cochin International Airport (COK) (approx. 1.5 hours). Direct flights from Kurnool Airport (KJB) to COK are infrequent or unavailable.\n*   **Travel Time:** Total door-to-door travel, including road travel to Hyderabad, airport formalities, flight, and travel from COK to Kochi city, will be approximately 8-9 hours.\n*   **Cost:** This is the most expensive option. Kurnool-HYD transport can range from \u20b91000-3000, and flight tickets from HYD-COK typically cost \u20b93000-7000+, depending on booking time. Total cost can be \u20b94000-10000+.\n*   **Convenience:** Fastest mode of transport, ideal for time-sensitive travel, but involves multiple transfers and can be more costly.\n\n**3. Bus (Recommended for Budget):**\n*   **Route:** Direct buses from Kurnool to Kochi are rare. Travelers would typically take a bus from Kurnool to a major hub like Bengaluru or Hyderabad, and then a connecting bus to Kochi (Ernakulam).\n*   **Travel Time:** Approximately 18-22 hours, including transfers and breaks, making it the longest travel option.\n*   **Cost:** Most economical for road travel. Kurnool to Bengaluru typically costs \u20b9500-800, and Bengaluru to Kochi costs \u20b91000-1500. Total cost can be \u20b91500-2300.\n*   **Convenience:** Offers a direct road journey, but the long duration can be very tiring. Various private operators and state-run corporations (APSRTC/KSRTC) provide services.\n\n**Local Transportation within Kochi (Ernakulam):**\nUpon arrival in Kochi, several efficient and cost-effective local transportation options are available:\n\n*   **Kochi Metro:** Fast, air-conditioned, and efficient for travel along its route, connecting major areas from Aluva to Tripunithura. Fares are affordable and distance-based (e.g., \u20b910-60).\n*   **Cabs (Ola/Uber/Local Taxis):** Offer comfortable, door-to-door service across the entire city. App-based services provide transparent pricing. Moderate to high cost depending on distance and demand.\n*   **Auto-rickshaws:** Widely available for short to medium distances. Economical for quick rides, though bargaining might be necessary with some drivers despite official metered fares.\n*   **Buses (KSRTC/Private):** An extensive and very economical network covering all parts of the city and suburbs. Can be crowded and slower due to traffic.\n*   **Ferries / Water Metro:** Unique to Kochi, connecting the mainland with islands like Fort Kochi, Vypin, and Willingdon Island. The modern Kochi Water Metro is air-conditioned, scenic, and essential for reaching island destinations, offering very economical fares (e.g., \u20b920-40)."
+  },
+  "itinerary": {
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "activity": "Arrival & Check-in",
+            "time": "Morning (flexible)",
+            "location": "Fort Kochi",
+            "description": "Arrive in Kochi, transfer to Fort Kochi, and check into your pre-booked accommodation. Take some time to freshen up and relax after your journey.",
+            "transportation": "Taxi/Uber/Ola from airport/station to Fort Kochi (approx. 1-1.5 hours from airport)"
+          },
+          {
+            "activity": "Traditional Kerala Lunch",
+            "time": "1:00 PM - 2:00 PM",
+            "location": "Fort Kochi",
+            "description": "Savor a traditional Kerala Sadya, a vegetarian feast served on a banana leaf, at a local eatery for an authentic culinary experience.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Explore Fort Kochi Historical Churches",
+            "time": "2:30 PM - 5:00 PM",
+            "location": "Fort Kochi",
+            "description": "Visit St. Francis Church, India's oldest European church where Vasco da Gama was initially buried. Afterwards, explore the grand Santa Cruz Basilica with its stunning interiors. Remember to dress modestly.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Sunset at Chinese Fishing Nets",
+            "time": "5:00 PM - 6:30 PM",
+            "location": "Chinese Fishing Nets, Fort Kochi",
+            "description": "Witness the iconic cantilevered Chinese Fishing Nets in action, especially beautiful as the sun dips below the horizon, creating a picturesque silhouette. Enjoy the vibrant atmosphere along the waterfront.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Kathakali Performance",
+            "time": "6:30 PM - 8:30 PM",
+            "location": "Various centers in Fort Kochi (e.g., Kerala Kathakali Centre)",
+            "description": "Experience a captivating Kathakali dance-drama performance, known for its elaborate costumes, makeup, and expressive storytelling. Many centers offer pre-show makeup demonstrations. Look for budget-friendly options.",
+            "transportation": "Walk / Auto-rickshaw (if needed)"
+          },
+          {
+            "activity": "Fresh Seafood Dinner",
+            "time": "9:00 PM onwards",
+            "location": "Fort Kochi waterfront restaurants",
+            "description": "Indulge in fresh seafood, grilled or prepared in a spicy coconut-based curry (Meen Curry), at one of the many local restaurants near the waterfront.",
+            "transportation": "Walk"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "activity": "Breakfast: Appam with Stew",
+            "time": "8:30 AM - 9:30 AM",
+            "location": "Local eatery, Fort Kochi",
+            "description": "Start your day with a delicious and light breakfast of Appam (soft, lacy rice pancakes) paired with a mild coconut milk-based stew (vegetable or chicken).",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Mattancherry Palace (Dutch Palace) & Paradesi Synagogue",
+            "time": "10:00 AM - 12:30 PM",
+            "location": "Mattancherry, Jew Town",
+            "description": "Take an auto-rickshaw to Mattancherry. Explore the Mattancherry Palace with its impressive murals depicting Hindu temple art. Afterwards, visit the historic Paradesi Synagogue, India's oldest active synagogue, known for its exquisite architecture and Chinese tiles. Modest entry fees apply for both. Remember to dress modestly.",
+            "transportation": "Auto-rickshaw (negotiate fare or use Uber/Ola) from Fort Kochi to Mattancherry"
+          },
+          {
+            "activity": "Jew Town & Spice Market Exploration",
+            "time": "12:30 PM - 2:00 PM",
+            "location": "Jew Town, Mattancherry",
+            "description": "Wander through the narrow, charming lanes of Jew Town, browsing antique shops, souvenir stalls, and experiencing the aromatic spice markets. This is a great place to pick up fresh spices. Bargaining is common here.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Lunch: Local Kerala Cuisine",
+            "time": "2:00 PM - 3:00 PM",
+            "location": "Jew Town / Mattancherry",
+            "description": "Enjoy a local lunch at a small cafe or restaurant in Jew Town, perhaps trying a different regional specialty or another Meen Curry.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Art Gallery Hopping / Relaxed Afternoon",
+            "time": "3:30 PM - 6:00 PM",
+            "location": "Fort Kochi",
+            "description": "Return to Fort Kochi and spend the afternoon exploring the numerous small art galleries, or simply relax at a cafe, soaking in the bohemian atmosphere.",
+            "transportation": "Auto-rickshaw / Walk back to Fort Kochi"
+          },
+          {
+            "activity": "Evening Stroll & Local Snacks",
+            "time": "6:00 PM - 7:30 PM",
+            "location": "Fort Kochi streets",
+            "description": "Take an evening stroll through the illuminated streets of Fort Kochi. Try some popular tea-time snacks like Pazham Pori (banana fritters) or Unniyappam (sweet fried snacks) from a local street stall, paired with filter coffee or chai.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Dinner",
+            "time": "8:00 PM onwards",
+            "location": "Fort Kochi",
+            "description": "Dine at a restaurant of your choice in Fort Kochi, perhaps trying a different Kerala dish or revisiting a favorite.",
+            "transportation": "Walk"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "activity": "Breakfast: Puttu and Kadala Curry",
+            "time": "8:00 AM - 9:00 AM",
+            "location": "Local eatery, Fort Kochi",
+            "description": "Try the staple Keralan breakfast of Puttu (steamed cylindrical rice cakes) served with a flavorful Kadala Curry (black chickpea curry).",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Ferry to Ernakulam & Marine Drive",
+            "time": "9:30 AM - 11:30 AM",
+            "location": "Ernakulam Mainland",
+            "description": "Take a scenic and extremely budget-friendly public ferry from Fort Kochi to Ernakulam (Mainland). Upon arrival, enjoy a leisurely stroll along Marine Drive, a picturesque promenade offering views of the city skyline and backwaters.",
+            "transportation": "Ferry from Fort Kochi Jetty to Ernakulam Jetty, then walk along Marine Drive"
+          },
+          {
+            "activity": "Ernakulam Shiva Temple Visit",
+            "time": "11:30 AM - 12:30 PM",
+            "location": "Ernakulam",
+            "description": "Visit the prominent Ernakulam Shiva Temple, a significant Hindu temple known for its traditional Kerala architecture. Remember to dress modestly; men may need to remove their shirts and wear a 'mundu' (dhoti) to enter the inner sanctum.",
+            "transportation": "Auto-rickshaw / Walk from Marine Drive"
+          },
+          {
+            "activity": "Lunch: Local 'Meals' Restaurant",
+            "time": "1:00 PM - 2:00 PM",
+            "location": "Ernakulam",
+            "description": "Have an authentic and affordable lunch at a local 'meals' restaurant on the mainland, offering a variety of curries, rice, and often a fish fry.",
+            "transportation": "Walk / Auto-rickshaw"
+          },
+          {
+            "activity": "Hill Palace Museum Exploration",
+            "time": "2:30 PM - 5:00 PM",
+            "location": "Tripunithura",
+            "description": "Travel to Tripunithura to visit the Hill Palace Museum, Kerala's largest archaeological museum. It showcases royal artifacts, paintings, and a deer park. Modest entry fee applies.",
+            "transportation": "Auto-rickshaw / Ola/Uber (approx. 30-45 min drive from Ernakulam city center)"
+          },
+          {
+            "activity": "Budget-Friendly Backwater Experience",
+            "time": "5:30 PM - 7:00 PM",
+            "location": "Ernakulam / nearby backwaters",
+            "description": "Instead of an expensive houseboat, opt for a public ferry ride through the backwaters or inquire locally for a short, local canoe trip for an authentic and affordable experience of Kerala's serene waterways.",
+            "transportation": "Auto-rickshaw to departure point for backwater ride (inquire locally for best options)"
+          },
+          {
+            "activity": "Dinner & Return to Fort Kochi",
+            "time": "7:30 PM onwards",
+            "location": "Ernakulam or Fort Kochi",
+            "description": "Enjoy dinner in Ernakulam before heading back to Fort Kochi, or take the ferry back to Fort Kochi for your final dinner there.",
+            "transportation": "Auto-rickshaw to ferry point, then ferry to Fort Kochi"
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "activities": [
+          {
+            "activity": "Leisurely Breakfast",
+            "time": "9:00 AM - 10:00 AM",
+            "location": "Fort Kochi",
+            "description": "Enjoy a relaxed breakfast at your accommodation or a favorite cafe in Fort Kochi, savoring your last morning in this charming town.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Last-minute Souvenir Shopping / Revisit a Favorite Spot",
+            "time": "10:00 AM - 12:00 PM",
+            "location": "Fort Kochi",
+            "description": "Spend your last hours picking up any remaining souvenirs from local shops in Fort Kochi, or revisit a favorite attraction for a final glimpse.",
+            "transportation": "Walk"
+          },
+          {
+            "activity": "Check-out & Departure",
+            "time": "12:00 PM onwards",
+            "location": "Fort Kochi",
+            "description": "Check out from your accommodation and transfer to the Kochi airport or railway station for your onward journey, carrying memories of Kerala.",
+            "transportation": "Taxi/Uber/Ola from Fort Kochi to airport/station"
+          }
+        ]
+      }
+    ]
+  },
+  "budget": {
+    "plan": {
+      "transportation": [
+        {
+          "description": "Round trip train fare (Kurnool to Kochi, Sleeper Class)",
+          "cost": 4000,
+          "calculation": "500 INR/person/way * 2 ways * 4 people = 4000 INR"
+        },
+        {
+          "description": "Local transport (public buses, walking, minimal auto/metro)",
+          "cost": 1200,
+          "calculation": "300 INR/day * 4 days = 1200 INR"
+        }
+      ],
+      "accommodation": [
+        {
+          "description": "Very basic homestay/guesthouse for 4 people",
+          "cost": 4000,
+          "calculation": "1000 INR/night * 4 nights = 4000 INR"
+        }
+      ],
+      "meals": [
+        {
+          "type": "Breakfast",
+          "cost": 2400,
+          "calculation": "4 people * 4 days * 150 INR/meal = 2400 INR"
+        },
+        {
+          "type": "Lunch",
+          "cost": 4000,
+          "calculation": "4 people * 4 days * 250 INR/meal = 4000 INR"
+        },
+        {
+          "type": "Dinner",
+          "cost": 4800,
+          "calculation": "4 people * 4 days * 300 INR/meal = 4800 INR"
+        }
+      ],
+      "activities": [
+        {
+          "name": "Fort Kochi sightseeing (Chinese fishing nets, St. Francis Church, Santa Cruz Basilica)",
+          "cost": 0,
+          "calculation": "Free"
+        },
+        {
+          "name": "Marine Drive",
+          "cost": 0,
+          "calculation": "Free"
+        },
+        {
+          "name": "Mattancherry Palace (Dutch Palace)",
+          "cost": 80,
+          "calculation": "20 INR/person * 4 people = 80 INR"
+        },
+        {
+          "name": "Paradesi Synagogue",
+          "cost": 40,
+          "calculation": "10 INR/person * 4 people = 40 INR"
+        }
+      ],
+      "emergency_fund": {
+        "description": "10% of total estimated cost (excluding emergency fund)",
+        "cost": 2052
+      },
+      "visa_fees": {
+        "description": "Domestic trip, no visa fees",
+        "cost": 0
+      },
+      "total_estimated_cost": 22572,
+      "budget_status": "within",
+      "cost_cutting_suggestions": [
+        "Opted for Sleeper Class train tickets for main transportation.",
+        "Chose very basic homestay/guesthouse accommodation (approx. 1000 INR/night).",
+        "Relied heavily on public transport and walking for local travel, minimizing auto/taxi use.",
+        "Focused on free or very low-cost activities (e.g., Fort Kochi walking tour, Marine Drive) and excluded expensive shows or longer backwater cruises."
+      ]
+    },
+    "validation": {
+      "currency": "INR",
+      "verified_at": "2024-07-30T10:30:00Z",
+      "categories": {
+        "accommodation": [
+          {
+            "description": "Very basic homestay/guesthouse for 4 people",
+            "cost": 4000,
+            "calculation": "1000 INR/night * 4 nights = 4000 INR",
+            "verified_cost": 4000
+          }
+        ],
+        "transportation": [
+          {
+            "description": "Round trip train fare (Kurnool to Kochi, Sleeper Class)",
+            "cost": 4000,
+            "calculation": "500 INR/person/way * 2 ways * 4 people = 4000 INR",
+            "verified_cost": 4000
+          },
+          {
+            "description": "Local transport (public buses, walking, minimal auto/metro)",
+            "cost": 1200,
+            "calculation": "300 INR/day * 4 days = 1200 INR",
+            "verified_cost": 1200
+          }
+        ],
+        "activities": [
+          {
+            "name": "Fort Kochi sightseeing (Chinese fishing nets, St. Francis Church, Santa Cruz Basilica)",
+            "cost": 0,
+            "calculation": "Free",
+            "verified_cost": 0
+          },
+          {
+            "name": "Marine Drive",
+            "cost": 0,
+            "calculation": "Free",
+            "verified_cost": 0
+          },
+          {
+            "name": "Mattancherry Palace (Dutch Palace)",
+            "cost": 80,
+            "calculation": "20 INR/person * 4 people = 80 INR",
+            "verified_cost": 80
+          },
+          {
+            "name": "Paradesi Synagogue",
+            "cost": 40,
+            "calculation": "10 INR/person * 4 people = 40 INR",
+            "verified_cost": 40
+          }
+        ],
+        "meals": [
+          {
+            "type": "Breakfast",
+            "cost": 2400,
+            "calculation": "4 people * 4 days * 150 INR/meal = 2400 INR",
+            "verified_cost": 2400
+          },
+          {
+            "type": "Lunch",
+            "cost": 4000,
+            "calculation": "4 people * 4 days * 250 INR/meal = 4000 INR",
+            "verified_cost": 4000
+          },
+          {
+            "type": "Dinner",
+            "cost": 4800,
+            "calculation": "4 people * 4 days * 300 INR/meal = 4800 INR",
+            "verified_cost": 4800
+          }
+        ],
+        "emergency_fund": {
+          "description": "10% of total estimated cost (excluding emergency fund)",
+          "cost": 2052,
+          "verified_cost": 2052,
+          "calculation": "10% of (5200+4000+11200+120+0) = 10% of 20520 = 2052 INR"
+        },
+        "visa_fees": {
+          "description": "Domestic trip, no visa fees",
+          "cost": 0,
+          "verified_cost": 0
+        }
+      },
+      "computed_total": 22572,
+      "original_total_in_plan": 22572,
+      "discrepancy": 0,
+      "within_budget": true,
+      "over_by": 0,
+      "flags": [],
+      "recommendations": [
+        "The budget plan is well-detailed and all calculations are accurate.",
+        "The plan effectively utilizes cost-cutting measures, aligning with a strict budget.",
+        "Accommodation at 1000 INR/night for 4 people is extremely basic, as noted in the plan. While feasible for a very tight budget, travelers should be prepared for minimal amenities."
+      ]
+    },
+    "total_cost": 22572,
+    "within_budget": true,
+    "budget_limit": 24000,
+    "realistic": true,
+    "validation_issues": []
+  },
+  "recommendations": [
+    "The budget plan is well-detailed and all calculations are accurate.",
+    "The plan effectively utilizes cost-cutting measures, aligning with a strict budget.",
+    "Accommodation at 1000 INR/night for 4 people is extremely basic, as noted in the plan. While feasible for a very tight budget, travelers should be prepared for minimal amenities."
+  ]
+}
