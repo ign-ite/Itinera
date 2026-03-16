@@ -10,21 +10,18 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Add backend directory to path for imports
 backend_dir = Path(__file__).parent
 sys.path.insert(0, str(backend_dir))
 
-# Load environment variables
 load_dotenv()
 
 from flow import TravelPlannerFlow
 
-# Validate API key on startup
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-if not GOOGLE_API_KEY:
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
     raise RuntimeError(
-        "GOOGLE_API_KEY environment variable not set. "
-        "Create a .env file with: GOOGLE_API_KEY=your_key_here"
+        "GEMINI_API_KEY environment variable not set. "
+        "Create a .env file with: GEMINI_API_KEY=your_key_here"
     )
 
 app = FastAPI(
@@ -33,7 +30,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, specify exact origins
@@ -94,7 +90,6 @@ def generate_plan_sync(job_id: str, request: TravelRequest):
         
         plan_id = str(uuid.uuid4())
         
-        # Extract budget_limit from the right location
         budget_limit = plan.get("budget", {}).get("budget_limit") or plan.get("metadata", {}).get("budget_limit", 0)
         
         plans_store[plan_id] = {
@@ -155,7 +150,6 @@ async def create_plan(request: TravelRequest, background_tasks: BackgroundTasks)
     """
     job_id = str(uuid.uuid4())
     
-    # Create job record
     jobs_store[job_id] = {
         "job_id": job_id,
         "status": "pending",
@@ -163,7 +157,6 @@ async def create_plan(request: TravelRequest, background_tasks: BackgroundTasks)
         "request": request.dict()
     }
     
-    # Start background task
     background_tasks.add_task(generate_plan_sync, job_id, request)
     
     return JobStatus(
@@ -209,7 +202,6 @@ def create_plan_sync(request: TravelRequest):
         
         plan_id = str(uuid.uuid4())
         
-        # Extract budget_limit properly
         budget_limit = plan.get("budget", {}).get("budget_limit") or plan.get("metadata", {}).get("budget_limit", 0)
         
         result = {
@@ -241,7 +233,7 @@ def create_plan_sync(request: TravelRequest):
 def list_plans(limit: int = 10):
     """List all generated plans"""
     plans = list(plans_store.values())
-    return plans[-limit:]  # Return most recent
+    return plans[-limit:]  
 
 @app.delete("/plan/{plan_id}")
 def delete_plan(plan_id: str):
@@ -251,7 +243,6 @@ def delete_plan(plan_id: str):
     
     del plans_store[plan_id]
     
-    # Delete file if exists
     plan_file = Path("generated_plans") / f"{plan_id}.json"
     if plan_file.exists():
         plan_file.unlink()

@@ -12,23 +12,41 @@ class TravelPlannerFlow:
         self.tasks = ItineraTasks()
         
     def validate_inputs(self, inputs):
-        required_fields = ['budget', 'duration', 'start_city', 'season', 'people']
-        missing = [field for field in required_fields if field not in inputs or not inputs[field]]
-        
-        if missing:
-            raise ValueError(f"Missing required fields: {', '.join(missing)}")
-        
-        if inputs['budget'] <= 0:
-            raise ValueError("Budget must be greater than 0")
-        
-        if inputs['duration'] <= 0:
-            raise ValueError("Duration must be at least 1 day")
-        
-        if inputs['people'] <= 0:
-            raise ValueError("Number of people must be at least 1")
-        
-        return True
-    
+        if not inputs.get('start_city'):
+            raise ValueError("Start city is required — we need to know where you're traveling from.")
+
+        if not inputs.get('budget') or inputs['budget'] <= 0:
+            inputs['budget'] = 50000
+            print("  Budget not specified, defaulting to ₹50,000")
+
+        if not inputs.get('duration') or inputs['duration'] <= 0:
+            inputs['duration'] = 7
+            print("  Duration not specified, defaulting to 7 days")
+
+        if not inputs.get('people') or inputs['people'] <= 0:
+            inputs['people'] = 1
+            print("  Travelers not specified, defaulting to 1")
+
+        if not inputs.get('interests'):
+            inputs['interests'] = 'sightseeing, local culture, food'
+            print("  Interests not specified, defaulting to general sightseeing")
+
+        valid_seasons = ['summer', 'winter', 'monsoon', 'spring', 'autumn']
+        if (inputs.get('season') or '').lower() not in valid_seasons:
+            month = datetime.now().month
+            if month in [12, 1, 2]:
+                inputs['season'] = 'winter'
+            elif month in [3, 4, 5]:
+                inputs['season'] = 'summer'
+            elif month in [6, 7, 8, 9]:
+                inputs['season'] = 'monsoon'
+            else:
+                inputs['season'] = 'autumn'
+            print(f"  Season not specified, using current: {inputs['season']}")
+
+        if 'currency' not in inputs:
+            inputs['currency'] = 'INR'
+
     def validate_feasibility(self, inputs):
         min_daily_cost_per_person = 1500
         min_total = inputs['people'] * inputs['duration'] * min_daily_cost_per_person
