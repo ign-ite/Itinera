@@ -4,6 +4,8 @@ Multi-agent travel planner built with CrewAI and the Gemini API.
 
 You describe a trip (interests, budget, duration, start city, season, group size). A set of specialist agents breaks the request into parts and pulls data from external APIs, and the backend validates the plan against your budget before returning it.
 
+**Live demo:** https://itinera-rho.vercel.app/
+
 ## Stack
 
 - Backend: Python, CrewAI, FastAPI, Pydantic, Gemini (via `langchain-google-genai`)
