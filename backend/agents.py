@@ -13,7 +13,7 @@ class ItineraAgents:
             model=model, 
             temperature=0.6,
             api_key=self.api_key,
-            use_vertexai=False  # force the Gemini API (not Vertex AI, which uses api version v1)
+            client_params={"http_options": {"api_version": "v1beta"}}  # developer instructions need v1beta
         )
 
         self.prompt_parser_agent = self._create_prompt_parser_agent()
